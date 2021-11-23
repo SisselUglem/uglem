@@ -76,7 +76,7 @@ header {
 
     .about__me-img {
         display: block;
-        background-image: url(../assets/portrait-me-about-1.png);
+        background-image: url(../assets/portrait-me-about-1.webp);
         background-size: cover;
         background-position: top center;
         height: 60vh;
@@ -95,6 +95,7 @@ header {
 @media screen and (max-width: 500px) {
 
     .about {
+        min-height: 71vh;
         height: fit-content;
     }
 }

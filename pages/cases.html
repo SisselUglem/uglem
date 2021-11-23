@@ -69,9 +69,11 @@
                             <br>Visit my portfolio to see more!
                         </p>
                         <div class="button__container">
-                            <button onclick="location.href='http://www.portfolio.uglem.se/'" class="button-main">
-                                portfolio
-                            </button>
+                            <a class="text-decoration-none" href="http://www.portfolio.uglem.se/" target="_blank">
+                                <button class="button-main">
+                                    portfolio
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -79,30 +81,141 @@
         </section>
         <section class="cases__container">
             <div class="cases__row flex-center-start">
-                <a class="cases__col flex-center-start" href="https://nysaternsfjallgard.se/">
+                <a class="text-decoration-none cases__col flex-center-start" type="button" data-toggle="collapse"
+                    data-target="#nysaternsfjallgard" aria-expanded="false" aria-controls="nysaternsfjallgard">
                     <img class="img-cases img-fluid" src="../assets/cases/nysaterns-slide.webp"
                         alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
                     <h3 class="cases__headline">nysäterns fjällgård</h3>
                     <h4 class="cases__vrt">creative solutions</h4>
                 </a>
-                <a class="cases__col flex-center-start" href="https://mmharjedalen.se/">
+                <div id="nysaternsfjallgard" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="button-main close" type="button" data-toggle="collapse"
+                            data-target="#nysaternsfjallgard" aria-expanded="false" aria-controls="nysaternsfjallgard">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>Nysäterns Fjällgård</h3>
+                            <p>
+                                Together with Nysäterns Fjällgård, I have developed both the website logo and
+                                advertising
+                                material.
+                                The company runs a summer cottage with cottage rental and a restaurant at the foot of
+                                Sonfjället.
+                            </p>
+                            <a class="text-decoration-none" href="https://nysaternsfjallgard.se/" target="_blank">
+                                <button class="button-main">
+                                    visit website
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-6 d-none d-md-block">
+                            <img class="img-fluid" src="../assets/cases/cases-info.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a class="text-decoration-none cases__col flex-center-start" type="button" data-toggle="collapse" data-target="#mmharjedalen"
+                    aria-expanded="false" aria-controls="mmharjedalen">
                     <img class="img-cases img-fluid" src="../assets/cases/mmh-slide.webp" alt="Möbelmästarna Härjedalen"
                         title="Möbelmästarna Härjedalen">
                     <h3 class="cases__headline">möbelmästarna härjedalen</h3>
                     <h4 class="cases__vrt">creative solutions</h4>
                 </a>
-                <a class="cases__col flex-center-start" href="http://fjallbrollopoevent.se/">
+                <div id="mmharjedalen" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="button-main close" type="button" data-toggle="collapse"
+                            data-target="#mmharjedalen" aria-expanded="false" aria-controls="mmharjedalen">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>Möbelmästarna Härjedalen</h3>
+                            <p>
+                                Härjedalen is part of the chain möbelmästarna, which has a common platform for retail.
+                                My task was to create a standalone website specifically for Möbelmästarna Härjedalen.
+                                Here, the company's interior design services and ready-made furniture packages are
+                                described.
+                            </p>
+                            <a class="text-decoration-none" href="https://mmharjedalen.se/" target="_blank">
+                                <button class="button-main">
+                                    visit website
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-6 d-none d-md-block">
+                            <img class="img-fluid" src="../assets/cases/cases-info-mm.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a class="text-decoration-none cases__col flex-center-start" type="button" data-toggle="collapse" data-target="#fjallbrollop"
+                    aria-expanded="false" aria-controls="fjallbrollop">
                     <img class="img-cases img-fluid" src="../assets/cases/fjallbrollop-slide.webp"
                         alt="Fjällbröllop & Event" title="Fjällbröllop & Event">
                     <h3 class="cases__headline">fjällbröllop & event</h3>
                     <h4 class="cases__vrt">creative solutions</h4>
                 </a>
-                <a class="cases__col flex-center-start" href="https://www.fjallorren.se/">
+                <div id="fjallbrollop" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="button-main close" type="button" data-toggle="collapse"
+                            data-target="#fjallbrollop" aria-expanded="false" aria-controls="fjallbrollop">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>Fjällbröllop & Event</h3>
+                            <p>
+                                This initiative is several companies that have joined forces to offer a complete concept
+                                for weddings in the mountains.
+                                I have had the honor of developing a website where every company can be seen and
+                                marketed.
+                            </p>
+                            <a class="text-decoration-none" href="http://fjallbrollopoevent.se/" target="_blank">
+                                <button class="button-main">
+                                    visit website
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-6 d-none d-md-block">
+                            <img class="img-fluid" src="../assets/cases/cases-info-fj.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a class="text-decoration-none cases__col flex-center-start" type="button" data-toggle="collapse" data-target="#fjallorren"
+                    aria-expanded="false" aria-controls="fjallorren">
                     <img class="img-cases img-fluid" src="../assets/cases/fjallorren-slide.webp" alt="Fjällorren"
                         title="Fjällorren">
                     <h3 class="cases__headline">fjällorren</h3>
                     <h4 class="cases__vrt">creative solutions</h4>
                 </a>
+                <div id="fjallorren" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="button-main close" type="button" data-toggle="collapse" data-target="#fjallorren"
+                            aria-expanded="false" aria-controls="fjallorren">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>Fjällorren</h3>
+                            <p>
+                                Fjällorren is a traditional restaurant at the foot of Särvfjället.
+                                Together with them, I have developed the website and advertising material
+                            </p>
+                            <a class="text-decoration-none" href="https://www.fjallorren.se/" target="_blank">
+                                <button class="button-main">
+                                    visit website
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-6 d-none d-md-block">
+                            <img class="img-fluid" src="../assets/cases/cases-info-or.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

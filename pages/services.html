@@ -54,20 +54,37 @@
             </nav>
             <div class="header__services">
                 <div class="headline-container">
-                <h2 class="services__headline">services</h2>
+                    <h2 class="services__headline">services</h2>
                 </div>
                 <div class="headline">
-                    <h2 class="headline__topic span">Web Development</h2>
-                    <h2 class="headline__topic">Logotypes</h2>
-                    <h2 class="headline__topic">Graphic Design</h2>
+                    <a class="text-decoration-none" href="#web"><h2 class="headline__topic span zoom">Web Development</h2></a>
+                    <a class="text-decoration-none" href="#logo"><h2 class="headline__topic zoom">Logotypes</h2></a>
+                    <a class="text-decoration-none" href="#graphic"><h2 class="headline__topic zoom">Graphic Design</h2></a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="web">
+        <section id="web" class="web">
             <div class="services__container">
-                <img class="web-img" src="../assets/computer-web-1.png" alt="Computer" title="Computer">
+                <div id="carouselExampleSlidesOnly" class="web-img col-12 col-md-6 carousel .carousel-fade mx-auto px-0"
+                    data-ride="carousel" data-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="../assets/computer-web-2.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../assets/computer-web-3.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../assets/computer-web-4.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../assets/computer-web-5.png" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+                <!--<img class="web-img" src="../assets/computer-web-1.png" alt="Computer" title="Computer">-->
                 <div class="article__container flex-center-start">
                     <h2 class="article__headline">web <span class="span">development</span></h2>
                     <div class="article__row">
@@ -75,8 +92,9 @@
                             <hr class="hr" />
                         </div>
                         <div class="article__col-2">
-                            <p>Make your ideas a reality! <br>I develop user-friendly web applications in JavaScript, 
-                                HTML5, CSS3. The objective of designing a website is to ensure that when the users open up 
+                            <p>Make your ideas a reality! <br>I develop user-friendly web applications in JavaScript,
+                                HTML5, CSS3. The objective of designing a website is to ensure that when the users open
+                                up
                                 the site they see the information in a format that is easy to read and relevant.
                             </p>
                         </div>
@@ -84,7 +102,7 @@
                 </div>
             </div>
         </section>
-        <section class="logo">
+        <section id="logo" class="logo">
             <div class="services__container flex-center-start">
                 <div class="grid-template-resp">
                     <img class="img-fluid grid-item item-1" src="../assets/logo/fjallfixarn.png" alt="Fjällfixarn"
@@ -105,8 +123,9 @@
                     <div class="logo__row">
                         <div class="article__col-2">
                             <p class="text-end">
-                                Your logotype is your face outwards and represents your company every second. 
-                                I help you create a unique logo based on your business idea and graphic profile and wishes.
+                                Your logotype is your face outwards and represents your company every second.
+                                I help you create a unique logo based on your business idea and graphic profile and
+                                wishes.
                             </p>
                         </div>
                         <div class="article__col-1">
@@ -132,7 +151,7 @@
                 </div>
             </div>
         </section>
-        <section class="graphic">
+        <section id="graphic" class="graphic">
             <div class="services__container">
                 <div class="grid-template-graphic">
                     <img class="img-fluid grid-item item-1" src="../assets/graphic/flyer.png" alt="Flyer" title="Flyer">
@@ -150,8 +169,8 @@
                         </div>
                         <div class="article__col-2">
                             <p>
-                                I assist you with the use of fonts, logos and colors in printed matters, 
-                                or in digital media. My focus is on user interface, heraldry, 
+                                I assist you with the use of fonts, logos and colors in printed matters,
+                                or in digital media. My focus is on user interface, heraldry,
                                 calligraphy and typography.
                             </p>
                         </div>

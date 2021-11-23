@@ -23,6 +23,7 @@ header {
     width: 100%;
 }
 
+
 .cases__row {
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,6 +58,22 @@ header {
     transform:scale(1.05)
 }
 
+.cases__info {
+    position: absolute;
+    max-width: 750px;
+    z-index: 1;
+    background-color: #161616;
+    padding: 3% 4% 4% 4%;
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.close {
+    display: flex;
+    align-self: flex-end !important;
+
+}
+
 
 
 
@@ -76,4 +93,11 @@ header {
         line-height: 22px;
     }
 
+    .cases__info {
+        max-width: 350px;
+        
+    }
+    
+
 }
+
