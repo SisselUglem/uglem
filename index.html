@@ -26,18 +26,20 @@
         <div class="vl"></div>
         <h4>Front end Development</h4>
     </aside>
-
-
+    <video autoplay muted class="header__video-desktop">
+        <source src="assets/header.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted playsinline class="header__video-mobile">
+        <source src="assets/header-resp.mp4" type="video/mp4">
+    </video>
     <header>
         <div class="header flex-center">
             <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
                 <a class="navbar-brand" href="#"><img src="assets/logotype.svg" alt="logotype" title="logotype"
-                        width="140px"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    width="140px">
+                </a>
+                <div id="toggler"></div>
+                <div id="dropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="pages/about.html">about<span class="sr-only">(current)</span></a>
@@ -96,26 +98,26 @@
         <section class="services">
             <div class="services__row flex-center-start">
                 <a href="pages/services.html#logo" class="text-decoration-none services__col flex-center-start">
-                    <img class="img-services img-fluid" src="assets/logotypes.webp" alt="Creative Solutions"
-                        title="Creative Solutions">
+                    <img class="img-services img-fluid" src="assets/logotypes.webp" alt="Logotypes"
+                        title="Logotypes">
                     <h3 class="services__headline">logotypes</h3>
                     <h4 class="services__vrt">creative solutions</h4>
                 </a>
                 <a href="pages/services.html#web" class="text-decoration-none services__col flex-center-start">
-                    <img class="img-services img-fluid" src="assets/web-development.webp" alt="Creative Solutions"
-                        title="Creative Solutions">
+                    <img class="img-services img-fluid" src="assets/web-development.webp" alt="Web development"
+                        title="Web development">
                     <h3 class="services__headline">web development</h3>
                     <h4 class="services__vrt">creative solutions</h4>
                 </a>
                 <a href="pages/services.html#graphic" class="text-decoration-none services__col flex-center-start">
-                    <img class="img-services img-fluid" src="assets/graphic-design.webp" alt="Creative Solutions"
-                        title="Creative Solutions">
+                    <img class="img-services img-fluid" src="assets/graphic-design.webp" alt="Graphic design"
+                        title="Graphic design">
                     <h3 class="services__headline">graphic design</h3>
                     <h4 class="services__vrt">creative solutions</h4>
                 </a>
                 <a href="pages/services.html#graphic" class="text-decoration-none services__col flex-center-start">
-                    <img class="img-services img-fluid" src="assets/layout-design.webp" alt="Creative Solutions"
-                        title="Creative Solutions">
+                    <img class="img-services img-fluid" src="assets/layout-design.webp" alt="Layout design"
+                        title="Layout design">
                     <h3 class="services__headline">layout design</h3>
                     <h4 class="services__vrt">creative solutions</h4>
                 </a>
@@ -153,6 +155,7 @@
         </div>
 
     </footer>
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

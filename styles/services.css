@@ -2,6 +2,7 @@
     background-image: url(../assets/banner-services-2.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
     margin-left: 8%;
 }
@@ -39,12 +40,15 @@
     padding-left: 2%;
     max-width: 40%;
     width: 100%;
-
     border-left: 1px solid white;
 }
 
 .headline__topic {
     display: flex;
+}
+
+.headline__topic:hover {
+    color: #a08b62;
 }
 
 .web {
@@ -141,7 +145,11 @@
 @media screen and (max-width: 800px) {
     .header__services {
         flex-direction: column;
+        height: 70vh;
+    }
 
+    .header-services {
+        height: fit-content;
     }
 
     .headline-container {
@@ -196,6 +204,18 @@
     .logo__headline {
         margin: 0% 0% 0% auto;
         max-width: 100%;
+    }
+
+    .web {
+        padding: 17% 2%;
+    }
+
+    .logo {
+        padding: 17% 2%;
+    }
+
+    .graphic {
+        padding: 17% 2%;
     }
 
     .web-img {

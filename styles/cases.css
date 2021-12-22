@@ -55,7 +55,7 @@ header {
 .img-cases:hover {
     filter:grayscale(90%);
     transition:transform .3s;
-    transform:scale(1.05)
+    transform:scale(1.02)
 }
 
 .cases__info {
@@ -96,6 +96,13 @@ header {
     .cases__info {
         max-width: 350px;
         
+    }
+    .cases__headline {
+        left: 10px;
+    }
+
+    .cases__vrt {
+        left: 8px;
     }
     
 

@@ -2,6 +2,12 @@ body {
     background-color: #161616;
 }
 
+/*MOBILE VIEW*/
+#toggler {
+    display: none;
+}
+
+/*MOBILE VIEW*/
 
 .navbar {
     width: 100% !important;
@@ -30,10 +36,6 @@ body {
     text-align: right;
 }
 
-.navbar-toggler {
-    border: none !important;
-
-}
 
 /*----aside----*/
 
@@ -278,17 +280,82 @@ footer {
 }
 
 
-@media screen and (max-width: 800px) {
-    h1 {
-        font-family: 'Maven Pro', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size:30px;
-        line-height:35px;
-        letter-spacing:.05em;
-        color: #ffffff;
-        text-transform: uppercase;
+@media screen and (max-width: 992px) {
+    #toggler {
+        display: flex;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: #252525;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
     }
+
+    #toggler::before {
+        content:'';
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background-color: white;
+        transform: translateY(-5px);
+        transition: .2s;
+    }
+    
+    #toggler::after {
+        content:'';
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background-color: white;
+        transform: translateY(5px);
+        transition: .2s;
+    }
+    
+    #toggler.active::before {
+        transform: translateY(0px) rotate(45deg);
+    }
+    
+    #toggler.active::after {
+        transform: translateY(0px) rotate(-45deg);
+    }
+
+    #dropdown {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        background-color: #252525;
+        gap: 25px;
+        padding-top: 6%;
+        z-index: 1;
+    }
+    
+    #dropdown.active {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    
+    }
+
+    .navbar-nav {
+        padding-top: 25%;
+        padding-right: 17px;
+    }
+
+    .nav-link {
+        width: 150px;
+        padding: 15px 16px !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
 
     h2 {
         max-width: 80%;
@@ -346,6 +413,17 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+
+    h1 {
+        font-family: 'Maven Pro', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size:30px;
+        line-height:35px;
+        letter-spacing:.05em;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
 
     .navbar {
         padding: 5% 5% 0% 5%

@@ -115,7 +115,7 @@ header {
 .img-services:hover {
     filter:grayscale(90%);
     transition:transform .3s;
-    transform:scale(1.05)
+    transform:scale(1.02)
 }
 
 @media  (min-aspect-ratio: 16/9) {
@@ -130,7 +130,7 @@ header {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
 
     .header__video-desktop {
         display: none;
@@ -179,6 +179,10 @@ header {
         max-width: 50%;
         width: 100%;
         position: relative;
+    }
+
+    .headline {
+        padding-left: 4%;
     }
 }
 
