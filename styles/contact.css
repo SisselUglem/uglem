@@ -12,12 +12,12 @@ header {
 
 .header__contact {
     flex-direction: column;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .header__row {
     flex-direction: row;
-    padding-top: 5%;
+    padding: 15% 0% 5% 0%;
 }
 
 .contact__info {
@@ -25,18 +25,19 @@ header {
     flex-direction: column;
     justify-content: right;
     text-align: center;
-    max-width: 50%;
-    width: 100%;
+    padding-top: 8%;
+    /*max-width: 50%;
+    width: 100%;*/
 }
 
 .icon {
     color: #a08b62;
     font-size: 25px;
     line-height: 35px;
-    padding: 5%;
+    padding: 15% 0% 5% 0%;
 }
 
-.form-container {
+/*.form-container {
     max-width: 50%;
     width: 100%;
 }
@@ -84,11 +85,16 @@ label {
     transform: scale(1.1);
     background-color: #a08b621a;
 }
+*/
+
+.mail:hover {
+    font-weight:500;
+}
 
 @media screen and (max-width: 800px) {
 
     header {
-        height: fit-content;
+        height: 70vh;
         padding-bottom: 10%;
     }
 
@@ -106,6 +112,6 @@ label {
     }
 
     .header__contact {
-        padding-top: 10%;
+        padding-top: 20%;
     }
 }

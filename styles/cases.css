@@ -58,23 +58,67 @@ header {
     transform:scale(1.02)
 }
 
+/*Cases popup
+#infoNysatern {
+    display: none;
+}
+
+#infoNysatern.active {
+    display: block;
+}
+
+#infoMm.active {
+    display: flex;
+}
+/*Cases popup end*/
+
 .cases__info {
-    position: absolute;
+    position: fixed;
+    top: 20%;
+    left: 400px;
     max-width: 750px;
+    width: 100%;
     z-index: 1;
     background-color: #161616;
     padding: 3% 4% 4% 4%;
     box-shadow: 0 10px 10px rgb(0, 0, 0, 0.6);
-    border-radius: 10px;
 }
+
 
 .close {
-    display: flex;
+    background-image: url(../assets/close-white.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 20px;
+    right: 20px;
     align-self: flex-end !important;
+    color: white;
+}
 
+.close:hover {
+    background-image: url(../assets/close-y.svg);
 }
 
 
+
+@media screen and (max-width: 900px) {
+    .cases__headline {
+        font-size: 18px;
+        line-height: 23px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 35%;
+        text-align: center;
+        text-transform: none;
+    }
+}
 
 
 @media screen and (max-width: 800px) {
@@ -88,17 +132,14 @@ header {
         position: relative;
     }
 
-    .cases__headline {
-        font-size: 18px;
-        line-height: 22px;
-    }
-
     .cases__info {
-        max-width: 350px;
-        
-    }
-    .cases__headline {
-        left: 10px;
+        position: fixed;
+        top: 20%;
+        left: 5%;
+        max-width: 90%;
+        width: 100%;
+        padding-top: 8%;
+        padding-bottom: 8%;
     }
 
     .cases__vrt {
@@ -106,5 +147,13 @@ header {
     }
     
 
+}
+
+@media screen and (max-width: 600px) {
+    .cases__headline {
+        font-size: 15px;
+        line-height: 20px;
+
+    }
 }
 

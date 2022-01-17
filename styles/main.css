@@ -2,12 +2,9 @@ body {
     background-color: #161616;
 }
 
-/*MOBILE VIEW*/
 #toggler {
     display: none;
 }
-
-/*MOBILE VIEW*/
 
 .navbar {
     width: 100% !important;
@@ -17,6 +14,7 @@ body {
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(255, 255, 255) !important;
     font-size: 18px;
+    
 }
 
 .nav-link {
@@ -34,6 +32,7 @@ body {
 
 .navbar-nav {
     text-align: right;
+    flex-direction: row !important;
 }
 
 
@@ -125,7 +124,8 @@ h5 {
 
 p{
     font-family: 'Montserrat', sans-serif;
-    font-style:normal;font-weight:300;
+    font-style:normal;
+    font-weight:300;
     font-size:14px;
     line-height:20px;
     color:rgb(207, 207, 207);
@@ -344,6 +344,10 @@ footer {
     
     }
 
+    .navbar {
+        padding: 6% 4% 0% 4% !important;
+    }
+
     .navbar-nav {
         padding-top: 25%;
         padding-right: 17px;
@@ -353,6 +357,7 @@ footer {
         width: 150px;
         padding: 15px 16px !important;
     }
+
 }
 
 @media screen and (max-width: 800px) {

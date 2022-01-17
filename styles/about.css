@@ -1,5 +1,5 @@
 header {
-    background-image: url(../assets/banner-about.png);
+    background-image: url(../assets/banner-about.webp);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ header {
 
 @media screen and (max-width: 700px) {
     header {
-        background-image: url(../assets/banner-about-resp.png);
+        background-image: url(../assets/banner-about-resp.webp);
         background-attachment: scroll;
     }
     
