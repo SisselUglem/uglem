@@ -177,14 +177,14 @@ h5 {
 }
 
 h6 {
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size:11px;
-    line-height:26px;
+    line-height:16px;
     letter-spacing:.05em;
     color: #ffffff;
-    text-transform: uppercase;
+
 }
 
 p{
@@ -272,8 +272,34 @@ main {
 }
 
 .about-me {
-    padding-left: 10% !important;
+    margin: 4%;
+    padding: 7% 0% 4% 0%;
+    /*background-color: #111111;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.747);*/
+    display: flex !important;
+    flex-direction: column;
 }
+
+.area {
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+
+    background-color: #161616;
+}
+
+.me {
+    display: flex;
+    opacity: 85%;
+    max-width: 350px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.747);
+}
+
 /*----end about-----*/
 
 
@@ -422,7 +448,7 @@ main {
 }
 
 .icon {
-    font-size: 15px;
+    font-size: 19px;
     color: #a08b62;
     padding-top: 3%;
 }
@@ -449,10 +475,6 @@ li {
     overflow: hidden;
 }
 
-.me {
-    display: flex;
-    opacity: 85%;
-}
 
 /*----end style----*/
 
@@ -541,8 +563,6 @@ li {
         margin: 0%;
     }
     
-
-    
 }
 
 @media screen and (max-width:850px) {
@@ -590,6 +610,10 @@ li {
 
     .row>* {
         padding: 0% !important;
+    }
+
+    .me {
+        max-width: 100% !important;
     }
 
 

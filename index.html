@@ -22,109 +22,643 @@
 
 <body>
     <aside class="aside">
-        <h4>Web Design</h4>
+        <h4>Webbdesign</h4>
         <div class="vl"></div>
-        <h4>Front end Development</h4>
+        <h4>Front end Utveckling</h4>
     </aside>
-    <video autoplay muted class="header__video-desktop">
+    <!--<video autoplay muted class="header__video-desktop">
         <source src="assets/header.mp4" type="video/mp4">
     </video>
     <video autoplay muted playsinline class="header__video-mobile">
         <source src="assets/header-resp.mp4" type="video/mp4">
-    </video>
+    </video>-->
     <header>
         <div class="header flex-center">
             <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
-                <a class="navbar-brand" href="#"><img src="assets/logotype.svg" alt="logotype" title="logotype"
+                <a class="navbar-brand" href="index.html"><img src="assets/logotype.svg" alt="logotype" title="logotype"
                     width="140px">
                 </a>
                 <div id="toggler"></div>
                 <div id="dropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="pages/about.html">about<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#services">Tjänster<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/services.html">services</a>
+                            <a class="nav-link" href="#cases">Kundcase</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/cases.html">cases</a>
+                            <a class="nav-link" href="#about">Om mig</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/contact.html">contact</a>
+                            <a class="nav-link" href="#contact">Kontakt</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <div class="header__headline flex-center">
-                <h1 class="headline">web design & <br>front end development</h1>
+            <div class="header__headline">
+                <h1 class="headline animate__animated animate__fadeInDown animate__faster">Webbdesign & <br>Front End Utveckling</h1>
+                <p class="headline__text animate__animated animate__fadeInDown animate__faster animate__delay-1s">Behöver du en ny hemsida, uppdatera din befintliga eller förnya ditt 
+                    annonsmaterial? Uglem hjälper dig med webbutveckling och grundläggande grafisk design</p>
+                    <a class="pt-3 icon-link" href="#index_about">
+                        <i class="animate__animated animate__bounce animate__delay-4s fa-solid fa-arrow-down"></i>
+                    </a>
             </div>
         </div>
     </header>
 
 
     <main>
-        <section class="about">
+        <section id="index_about" class="about">
             <div class="about__container">
-                <h2>about <span class="span">uglem.</span></h2>
+                <h2 class="eng">about <span class="span">uglem.</span></h2>
+                <h2>om <span class="span">uglem.</span></h2>
                 <div class="about__row flex-center-start">
                     <div class="about__col">
-                        <h3 class="about__col-headline">what I do</h3>
-                        <p>
+                        <h3 class="eng about__col-headline">what I do</h3>
+                        <h3 class="about__col-headline">Webbutveckling</h3>
+                        <p class="eng">
                             I develop and design user-friendly websites, graphic layouts and logos.
                             Share your ideas with me and we will create a graphic profile based on your needs.
                         </p>
-                        <button onclick="location.href='pages/about.html'" class="button-main" type="submit">
-                            about me
+                        <p>Jag utvecklar och designar användarvänliga hemsidor, grafiska layouter och logotyper.
+                            <br><br>Dela dina idéer med mig så skapar vi en grafisk profil utifrån dina behov.
+                        </p>
+                        <button onclick="location.href='#cases'" class="button-main" type="submit">
+                            Kundcase <i class="btn-icon fas fa-chevron-down"></i>
                         </button>
                     </div>
                     <div class="about__col">
                         <div class="about__col-list flex-center-start">
                             <i class="icon fas fa-code"></i>
-                            <h5>Web Development</h5>
+                            <h5 class="eng">Web Development</h5>
+                            <h5>Webbutveckling</h5>
                             <i class="icon fas fa-palette"></i>
-                            <h5>Graphic Design</h5>
+                            <h5 class="eng">Graphic Design</h5>
+                            <h5>Grafisk Design</h5>
                             <i class="icon fas fa-laptop"></i>
-                            <h5>Layout Design</h5>
+                            <h5 class="eng">Layout Design</h5>
+                            <h5>Sökoptimering</h5>
                         </div>
                     </div>
                     <div class="about__col">
                         <img class="portrait img-fluid" src="assets/portrait-me.webp" alt="Portrait" title="Portrait">
                     </div>
                 </div>
-                <h2>my <span class="span">services</span></h2>
             </div>
+        </section>
+        <section id="services" class="services__topic flex-center pb-4">
+            <h2 class="eng">my <span class="span">services</span></h2>
+            <h2>mina <span class="span">tjänster</span></h2>
         </section>
         <section class="services">
             <div class="services__row flex-center-start">
-                <a href="pages/services.html#logo" class="text-decoration-none services__col flex-center-start">
+                <div class="text-decoration-none services__col flex-center-start">
                     <img class="img-services img-fluid" src="assets/logotypes.webp" alt="Logotypes"
                         title="Logotypes">
-                    <h3 class="services__headline">logotypes</h3>
+                    <h3 class="services__headline">logotype</h3>
+                    <p class="eng">
+                        Your logotype is your face outwards and represents your company every second.
+                        I help you create a unique logo based on your business idea and graphic profile and
+                        wishes.
+                    </p>
+                    <p class="services__text">
+                        Din logotyp är ditt ansikte utåt och representerar ditt företag varje sekund.
+                        Jag hjälper dig att skapa en unik logotyp utifrån din affärsidé och grafiska profil och
+                        lyckönskningar.
+                    </p>
                     <h4 class="services__vrt">creative solutions</h4>
-                </a>
-                <a href="pages/services.html#web" class="text-decoration-none services__col flex-center-start">
+                </div>
+                <div class="text-decoration-none services__col flex-center-start">
                     <img class="img-services img-fluid" src="assets/web-development.webp" alt="Web development"
                         title="Web development">
-                    <h3 class="services__headline">web development</h3>
+                    <h3 class="eng services__headline">web <br>development</h3>
+                    <h3 class="services__headline">webb <br>utveckling</h3>
+                    <p class="eng mt-md-4 mt-1">Make your ideas a reality! <br>I develop user-friendly web applications in JavaScript,
+                        HTML5, CSS3. The objective of designing a website is to ensure that when the users open
+                        up
+                        the site they see the information in a format that is easy to read and relevant.
+                    </p>
+                    <p class="services__text mt-md-2 mt-0">Gör dina idéer till verklighet! <br>Jag utvecklar användarvänliga webbapplikationer. Målet med att designa en webbplats är att säkerställa din och användarens upplevelse.
+                    </p>
                     <h4 class="services__vrt">creative solutions</h4>
-                </a>
-                <a href="pages/services.html#graphic" class="text-decoration-none services__col flex-center-start">
+                </div>
+                <div class="text-decoration-none services__col flex-center-start">
                     <img class="img-services img-fluid" src="assets/graphic-design.webp" alt="Graphic design"
                         title="Graphic design">
-                    <h3 class="services__headline">graphic design</h3>
+                    <h3 class="eng services__headline">graphic design</h3>
+                    <h3 class="services__headline">grafisk design</h3>
+                    <p class="eng">
+                        I assist you with the use of fonts, logos and colors in printed matters,
+                        or in digital media. My focus is on user interface, heraldry,
+                        calligraphy and typography.
+                    </p>
+                    <p class="services__text">
+                        Jag hjälper dig med användning av typsnitt, logotyper och färger i trycksaker
+                        eller i digitala medier. Mitt fokus ligger på användargränssnitt, heraldik,
+                        kalligrafi och typografi.
+                    </p>
                     <h4 class="services__vrt">creative solutions</h4>
-                </a>
-                <a href="pages/services.html#graphic" class="text-decoration-none services__col flex-center-start">
-                    <img class="img-services img-fluid" src="assets/layout-design.webp" alt="Layout design"
-                        title="Layout design">
-                    <h3 class="services__headline">layout design</h3>
+                </div>
+                <div class="text-decoration-none services__col flex-center-start">
+                    <img class="img-services img-fluid" src="assets/layout-design.webp" alt="Sökoptimering"
+                        title="Sökoptimering">
+                    <h3 class="services__headline">sökoptimering</h3>
+                    <p class="services__text">
+                        Vill du synas bättre på nätet och i sökmototer? Jag hjälper er optimera kampanjer i Google Ads och förbereda Google Analytics samt att analysera, estimera och optimera insatser inom både SEO och SEM.
+                    </p>
                     <h4 class="services__vrt">creative solutions</h4>
-                </a>
+                </div>
             </div>
         </section>
-    </main>
+        <section id="cases" class="cases flex-center">
+            <div class="case__container article__container flex-center-start">
+                <h2 class="eng article__headline">previous <span class="span">work</span></h2>
+                <h2 class="article__headline">Mina <span class="span">Kundcase</span></h2>
+                <div class="article__row">
+                    <div class="article__col-1">
+                        <hr class="hr" />
+                    </div>
+                    <div class="article__col-2">
+                        <p class="eng">I have been entrusted to work with a number of companies over the years.
+                            I have developed websites, designed ads and logos. Below you see a selection of these.
+                            <br>Visit my portfolio to see more!
+                        </p>
+                        <p>Jag har fått förtroendet att arbeta med ett antal företag genom åren.
+                            <br>Nedan ser ni ett urval av uppdrag där jag bland annat utvecklat hemsidor, designat annonser och logotyper.</p>
+                        <div class="button__container">
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cases">
+            <div class="cases-template">
+                <!-----ITEM-1----->
+                <a class="grid-item" type="button" data-toggle="collapse" data-target="#fjallbrollop"
+                aria-expanded="false" aria-controls="fjallbrollop">
+                    <img class="img-cases img-fluid" src="assets/cases/fjallbrollop-slide.webp"
+                        alt="Fjällbröllop & Event" title="Fjällbröllop & Event">
+                    <h3 class="cases__headline">Fjällbröllop <br>& Event</h3>
+                </a>
+                <div id="fjallbrollop" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="close button-main" type="button" data-toggle="collapse"
+                            data-target="#fjallbrollop" aria-expanded="false" aria-controls="fjallbrollop">
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>Fjällbröllop & Event</h3>
+                            <p class="eng">
+                                This initiative is several companies that have joined forces to offer a complete concept
+                                for weddings in the mountains.
+                                I have had the honor of developing a website where every company can be seen and
+                                marketed.
+                            </p>
+                            <p class="pt-3">Detta initiativ är flera företag som gått samman för att erbjuda ett komplett koncept för bröllop 
+                                i fjällen. <br><br>Jag har haft äran att utveckla deras hemsida där alla företag som är verksamma i projektet 
+                                får synas och markadsföras.
+                                <br><br>
+                            </p>
+                            <a class="text-decoration-none" href="http://fjallbrollopoevent.se/" target="_blank">
+                                <button class="button-main">
+                                    besök hemsida
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid cases_img" src="assets/cases/cases-info-fj.png" alt="Fjällbröllop & Event" title="Fjällbröllop & Event">
+                        </div>
+                    </div>
+                </div>
+                <!-----ITEM-2----->
+                <a class="grid-item" type="button" data-toggle="collapse" data-target="#mmharjedalen"
+                    aria-expanded="false" aria-controls="mmharjedalen">
+                    <img class="img-cases img-fluid" src="assets/cases/mmh-slide.webp" alt="Möbelmästarna Härjedalen"
+                        title="Möbelmästarna Härjedalen">
+                    <h3 class="cases__headline">Möbelmästarna <br>Härjedalen</h3>
+                </a>
+                <div id="mmharjedalen" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="close button-main" type="button" data-toggle="collapse"
+                            data-target="#mmharjedalen" aria-expanded="false" aria-controls="mmharjedalen">
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>Möbelmästarna Härjedalen</h3>
+                            <p class="eng">
+                                Möbelmästarna Härjedalen is part of the chain möbelmästarna, which has a common platform for retail.
+                                My task was to create a standalone website specifically for Möbelmästarna Härjedalen.
+                                Here, the company's interior design services and ready-made furniture packages are
+                                described.
+                            </p>
+                            <p class="pt-3">
+                                Möbelmästarna Härjedalen ingår i kedjan möbelmästarna som har en gemensam plattform för detaljhandel.
+                                <br><br>Min uppgift i det här projektet var att skapa en fristående hemsida specifikt för Möbelmästarna Härjedalen där 
+                                företagets inredningstjänster och färdiga möbelpaket beskrivs.
+                                <br><br>Jag designar även löpande annonseringsmaterial för företaget.</p>
+                            <a class="text-decoration-none" href="https://mmharjedalen.se/" target="_blank">
+                                <button class="button-main">
+                                    besök hemsida
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid cases_img" src="assets/cases/cases-info-mm.webp" alt="Möbelmästarna Härjedalen" title="Möbelmästarna Härjedalen">
+                        </div>
+                    </div>
+                </div>
+                <!-----ITEM-3----->
+                <a class="grid-item" type="button" data-toggle="collapse" data-target="#skoter"
+                aria-expanded="false" aria-controls="skoter">
+                    <img class="img-cases img-fluid" src="assets/cases/skoter-slide.webp" alt="Messlingen Skoteruthyrning"
+                        title="Messlingen Skoteruthyrning">
+                    <h3 class="cases__headline">Messlingen <br>Skoteruthyrning</h3>
+                </a>
+                <div id="skoter" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="close button-main" type="button" data-toggle="collapse"
+                            data-target="#skoter" aria-expanded="false" aria-controls="skoter">
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>Messlingen Skoteruthyrning</h3>
+                            <p class="eng">
+                                In this project I have designed and developed the website for the company 
+                                Messlingen Skoteruthyrning. This particular page is built in Wordpress.
+                            </p>
+                            <p class="pt-3">
+                                I detta projekt har jag designat och utvecklat hemsidan för företaget Messlingen Skoteruthyrning. 
+                                <br><br>Företaget bedriver verksamhet skoteruthyrning med guidade turer i härjedalens fjällvärld. 
+                                Under sommarhalvåret ebjuder företaget även tjänster inom hantverk så som renoveringar och utbyggnationer, även nybyggnationer<br><br></p>
+                            <a class="text-decoration-none" href="https://www.messlingenskoter.se/" target="_blank">
+                                <button class="button-main">
+                                    besök hemsida
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid cases_img" src="assets/cases/cases-info-skoter.webp" alt="Messlingen Skoteruthyrning" title="Messlingen Skoteruthyrning">
+                        </div>
+                    </div>
+                </div>
+                <!-----ITEM-4----->
+                <a class="grid-item" type="button" data-toggle="collapse" data-target="#fjallorren"
+                    aria-expanded="false" aria-controls="fjallorren">
+                    <img class="img-cases img-fluid" src="assets/cases/fjallorren-slide.webp" alt="Fjällorren"
+                        title="Fjällorren">
+                    <h3 class="cases__headline pt-2">Fjällorren</h3>
+                </a>
+                <div id="fjallorren" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="close button-main" type="button" data-toggle="collapse"
+                            data-target="#fjallorren" aria-expanded="false" aria-controls="fjallorren">
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>Fjällorren</h3>
+                            <p class="eng">
+                                Fjällorren is a traditional restaurant at the foot of Särvfjället.
+                                Together with them, I have developed the website and advertising material
+                            </p>
+                            <p class="pt-3">Vid foten av Särvfjället hittar ni restaurang Fjällorren. En liten restaurang med glädje till natur och upplevelser.
+                                <br><br>Tillsammans med dem har jag tagit utvecklat företagets hemsida och löpande annonsmaterial<br><br></p>
+                            <a class="text-decoration-none" href="https://www.fjallorren.se/" target="_blank">
+                                <button class="button-main">
+                                    besök hemsida
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid cases_img" src="assets/cases/cases-info-or.webp" alt="Fjällorren" title="Fjällorren">
+                        </div>
+                    </div>
+                </div>
+                    <!-----ITEM-5----->
+                    <a class="grid-item" type="button" data-toggle="collapse"
+                        data-target="#hovslageri" aria-expanded="false" aria-controls="hovslageri">
+                        <img class="img-cases img-fluid" src="assets/cases/hovslageri-slide.webp"
+                            alt="Nysäterns hovslageri" title="Nysäterns hovslageri">
+                        <h3 class="cases__headline">Nysäterns <br>Hovslageri</h3>
+                    </a>
+                    <div id="hovslageri" class="cases__info collapse">
+                        <div class="d-flex justify-content-end col-12 pb-3">
+                            <button class="close button-main" type="button" data-toggle="collapse"
+                                data-target="#hovslageri" aria-expanded="false" aria-controls="hovslageri">
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12 pt-3">
+                                <h3>Nysäterns Hovslageri</h3>
+                                <p class="eng">                               
+                                    Nysäterns Hovslageri is a local company in Härjedalen that offers services in farrowing and all-service. 
+                                    I have been entrusted with designing the company's logo and website as well as marketing materials.
+                                </p>
+                                <p class="pt-3">Nysäterns Hovslageri är ett lokalt företag i Härjedalen som erbjuder tjänster inom grisning och allservice. 
+                                    <br><br>Jag har fått förtroendet att designa företagets logotyp och marknadsföringsmaterial samt att utvecklandet av deras hemsida.<br><br></p>
+                                <a class="text-decoration-none" href="#" target="_blank">
+                                    <button class="button-main">
+                                        besök hemsida
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid cases_img" src="assets/cases/cases-info-hovslageri.webp" alt="Nysäterns Hovslageri" title="Nysäterns Hovslageri">
+                            </div>
+                        </div>
+                    </div>
+                    <!-----ITEM-6----->
+                    
+                    <a class="grid-item" type="button" data-toggle="collapse"
+                    data-target="#nysaternsfjallgard" aria-expanded="false" aria-controls="nysaternsfjallgard">
+                        <img class="img-cases img-fluid" src="assets/cases/nysatern-slide.webp"
+                            alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
+                        <h3 class="cases__headline">Nysäterns <br>Fjällgård</h3>
+                    </a>
+                    <div id="nysaternsfjallgard" class="cases__info collapse">
+                        <div class="d-flex justify-content-end col-12 pb-3">
+                            <button class="close button-main" type="button" data-toggle="collapse"
+                                data-target="#nysaternsfjallgard" aria-expanded="false" aria-controls="nysaternsfjallgard">
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12 pt-3">
+                                <h3>Nysäterns Fjällgård</h3>
+                                <p class="pt-3">Tillsammans med Nysäterns Fjällgård har jag tagit fram både hemsida, logotyp och reklam-
+                                    material så som annonser till tidsskrifter och sociala medier.
+                                    <br><br>Företaget driver en fjällgård med stuguthyrning och café vid foten av
+                                    Sonfjället.<br><br></p>
+                                <a class="text-decoration-none" href="https://nysaternsfjallgard.se/" target="_blank">
+                                    <button class="button-main">
+                                        besök hemsida
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid cases_img" src="assets/cases/cases-info.webp" alt="Nysäterns Djällgård" title="Nysäterns Fjällgård">
+                            </div>
+                        </div>
+                    </div>
+                    <!-----ITEM-7----->
+                    <a class="grid-item" type="button" data-toggle="collapse"
+                        data-target="#jakt" aria-expanded="false" aria-controls="jakt">
+                        <img class="img-cases img-fluid" src="assets/cases/jakt-slide.webp"
+                            alt="Trumvallens Jakt" title="Trumvallens Jakt">
+                        <h3 class="cases__headline">Trumvallens <br>Jakt</h3>
+                    </a>
+                    <div id="jakt" class="cases__info collapse">
+                        <div class="d-flex justify-content-end col-12 pb-3">
+                            <button class="close button-main" type="button" data-toggle="collapse"
+                                data-target="#jakt" aria-expanded="false" aria-controls="jakt">
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12 pt-3">
+                                <h3>Trumvallens Jakt</h3>
+                                <p class="eng">
+                                    Together with Trumvallens Jakt I've developed a website 
+                                    with the purpose of showing information about their various hunts and dog kennels. 
+                                    The company also rents out hunting cabins in Jämtland's beautiful nature. 
+                                    I've also been entrusted to design the company's marketing material such as ads for magazines and social media
+                                </p>
+                                <p class="pt-3">Tillsammans med Trumvallens Jakt har jag tagit fram en hemsida med syfte att visa information om deras olika jakter och hundkurser. 
+                                    <br><br>Företaget hyr även ut jaktstugor i Jämtlands vackra natur. Jag har även fått förtroendet att utforma företagets marknadsföringsmaterial 
+                                    såsom annonser för tidningar och sociala medier.<br><br>
+                                </p>
+                                <a class="text-decoration-none" href="https://trumvallens-jakt.se/" target="_blank">
+                                    <button class="button-main">
+                                        besök hemsida
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid cases_img" src="assets/cases/cases-info-jakt.webp" alt="Trumvallens Jakt" title="Trumvallens Jakt">
+                            </div>
+                        </div>
+                    </div>
+                    <!-----ITEM-8----->
+                    <a class="grid-item" type="button" data-toggle="collapse"
+                        data-target="#kam" aria-expanded="false" aria-controls="kam">
+                        <img class="img-cases img-fluid" src="assets/cases/kam-slide.webp"
+                            alt="K.A.M" title="K.A.M">
+                        <h3 class="cases__headline">K.A.M <br>Frisör Makeup</h3>
+                    </a>
+                    <div id="kam" class="cases__info collapse">
+                        <div class="d-flex justify-content-end col-12 pb-3">
+                            <button class="close button-main" type="button" data-toggle="collapse"
+                                data-target="#kam" aria-expanded="false" aria-controls="kam">
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12 pt-3">
+                                <h3>K.A.M <br>Frisör Makeup</h3>
+                                <p class="eng">
+                                    I have had the honor of designing K.A.M's logo. The company runs a hair salon in Vemdalen / Härjedalen.
+                                </p>
+                                <p class="pt-3">Jag har haft äran att designa K.A.M's logotyp. <br>Företaget K.A.M. är en salong med kreativa frisörer mitt i Vemdalen by.
+                                    <br><br>En trendmedveten frisörsalong med mycket hjärta.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid cases_img" src="assets/cases/cases-info-kam.webp" alt="K.A.M Frisör Makeup" title="K.A.M Frisör Makeup">
+                            </div>
+                        </div>
+                    </div>
+                
+                <!-----ITEM-9----->
+                <a class="grid-item" type="button" data-toggle="collapse" data-target="#hfg"
+                    aria-expanded="false" aria-controls="hfg">
+                    <img class="img-cases img-fluid" src="assets/cases/hfg-slide.webp" alt="Hede Företagargrupp"
+                        title="Hede Företagargrupp">
+                    <h3 class="cases__headline">Hede <br>Företagargrupp</h3>
+                </a>
+                <div id="hfg" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="close button-main" type="button" data-toggle="collapse"
+                            data-target="#hfg" aria-expanded="false" aria-controls="hfg">
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>Hede Företagargrupp</h3>
+                            <p class="eng">
+                                I have had the honor of designing HFG's logo. 
+                                Hede Företagargrupp is a non-profit association that works to develop communities aound the
+                                area of Sonfjället and to stimulate the business climate.
+                            </p>
+                            <p class="pt-3">
+                                Jag har fått äran att designa HFG:s logotyp. 
+                                <br><br>Hede Företagargrupp är en ideell förening som arbetar för att utveckla samhällen runt Sonfjällets område och för att stimulera företagsklimatet.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid cases_img" src="assets/cases/cases-info-hfg.webp" alt="Hede Företagargrupp" title="Hede Företagargrupp">
+                        </div>
+                    </div>
+                </div>
+                <!-----ITEM-10----->
+                <a class="grid-item" type="button" data-toggle="collapse" data-target="#tradgard"
+                    aria-expanded="false" aria-controls="tradgard">
+                    <img class="img-cases img-fluid" src="assets/cases/fjallflorist-slide.webp" alt="Fjällflorist & Trädgård"
+                        title="Fjällflorist & Trädgård">
+                    <h3 class="cases__headline">Fjällflorist <br>& Trädgård</h3>
+                </a>
+                <div id="tradgard" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="close button-main" type="button" data-toggle="collapse"
+                            data-target="#tradgard" aria-expanded="false" aria-controls="tradgard">
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>Fjällflorist & Trädgård</h3>
+                            <p class="eng">
+                                In this project I have designed and developed the website for the company 
+                                Fjällflorist & Trädgård. This particular page is built in Wordpress.
+                            </p>
+                            <p class="py-3">
+                                I detta projekt har jag designat och utvecklat hemsidan för företaget Fjällflorist & Trädgård. 
+                                <br><br>Fjällflorist och Trädgård  formger trädgårdar och utemiljöer åt privatpersoner, bostadsrättsföreningar och företag.<br><br> 
+                            </p>
+                            <a class="text-decoration-none" href="http://fjallfloristotradgard.se/" target="_blank">
+                                <button class="button-main">
+                                    besök hemsida
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid cases_img" src="assets/cases/cases-info-florist.webp" alt="Fjällflorist & Trädgård" title="Fjällflorist & Trädgård">
+                        </div>
+                    </div>
+                </div>
+                <!-----ITEM-11----->
+                <a class="grid-item" type="button" data-toggle="collapse"
+                    data-target="#fixarn" aria-expanded="false" aria-controls="fixarn">
+                    <img class="img-cases img-fluid" src="assets/cases/fixarn-slide.webp"
+                        alt="Fjällfixarn" title="Fjällfixarn">
+                    <h3 class="cases__headline pt-2">Fjällfixarn</h3>
+                </a>
+                <div id="fixarn" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="close button-main" type="button" data-toggle="collapse"
+                            data-target="#fixarn" aria-expanded="false" aria-controls="fixarn">
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>Fjällfixarn</h3>
+                            <p class="pt-3">
+                                Tillsammans med Fjällfixaren har jag fått äran att skapa företagets logotype.
+                                <br><br> Företaget är fjälltäckande hantverksproffs som tar sej an stora som små jobb inom byggbranschen från grund till tak.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid cases_img" src="assets/cases/cases-info-fixarn.webp" alt="Fjällfixarn">
+                        </div>
+                    </div>
+                </div>
+                <!-----ITEM-12----->
+                <a class="grid-item" type="button" data-toggle="collapse"
+                    data-target="#gpea" aria-expanded="false" aria-controls="gpea">
+                    <img class="img-cases img-fluid" src="assets/cases/gpea-slide.webp"
+                        alt="GPEA" title="GPEA">
+                    <h3 class="cases__headline pt-2">GPEA</h3>
+                </a>
+                <div id="gpea" class="cases__info collapse">
+                    <div class="d-flex justify-content-end col-12 pb-3">
+                        <button class="close button-main" type="button" data-toggle="collapse"
+                            data-target="#gpea" aria-expanded="false" aria-controls="gpea">
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 pt-3">
+                            <h3>GPEA</h3>
+                            <p class="pt-3">                               
+                                Jag har fått förtroendet att designa företaget GPEA's logotype. <br><br>
+                                GPEA är ett företag som erbjuder tjänster inom allservice, svets och reparationer.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid cases_img" src="assets/cases/cases-info-gpea.webp" alt="GPEA">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <aside class="about-aside">
+        </aside>
+        <section id="about" class="about-me flex-center">
+            <div class="article__container flex-center-start">
+                <h2 class="eng article__headline">about <span class="span">me</span></h2>
+                <h2 class="article__headline">om <span class="span">mig</span></h2>
+                <div class="article__row">
+                    <div class="article__col-1">
+                        <hr class="hr"/>
+                    </div>
+                    <div class="article__col-2">
+                        <p class="eng"> I care about creating a positive customer experience and ensuring that everyone I work with 
+                            comes away feeling that they have been provided both service and products of the best quality.
+                            I'm a creative person who loves new challenges! When I am not developing
+                            or designing, you will usually find me outdoors in nature. Preferably up north with my fishing 
+                            gear!
+                        </p>
+                        <p>Jag är mån om att skapa en positiv kundupplevelse och se till att alla jag jobbar med känner att de har fått både service och produkter av bästa kvalitet. 
+                            <br>Jag är en kreativ person som älskar nya utmaningar! <br><br>När jag inte utvecklar eller designar så hittar du mig oftast ute i naturen. 
+                            Gärna norrut med mitt fiskespö!
+                        </p>
+                        <div class="button__container">
+                            <a class="text-decoration-none" href="#contact" target="_blank">
+                                <button class="button-main">
+                                    kontakt
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="about__me-img"></div>
+        <section id="contact" class="header__contact flex-center">
+            <h2 class="eng contact__headline">contact</h2>
+            <h2 class="contact__headline">Kontakta <span class="span">mig</span></h2>
+            <div class="header__row flex-center">
+                <div class="contact__info">
+                    <i class="icon fas fa-envelope"></i>
+                    <a class="link-mail" href="mailto:info@uglem.se"><p class="mail">info@uglem.se</p></a>
+                </div>
+                <div class="contact__info">
+                    <i class="icon fas fa-phone"></i>
+                    <p>+45 70 309 52 56</p>
+                </div>
+                <div class="contact__info">
+                    <i class="icon fas fa-map-marker-alt"></i>
+                    <p>Hede, Härjedalen</p>
+                </div>
+                <!--<div class="form-container">
+                    <h3>Send me an email!</h3>
+                    <form method="post" action="mailto:info@uglem.se" enctype="multipart/form-data" name="EmailForm">
+                        <label for="name">full name</label>
+                        <input type="text" id="name" class="input-field" placeholder="Name" required>
+                        <label for="email">email</label>
+                        <input type="email" id="email" class="input-field" placeholder="Email" required>
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" class="input-field" rows="5" placeholder="Message"
+                            required></textarea>
+                        <div class="button">
+                            <button type="submit" class="form__button">send</button>
+                        </div>
+                    </form>
+                </div>-->
+            </div>
+        </section>
+    </div>
+
+    </main>
 
     <footer>
         <div class="footer">
@@ -132,21 +666,21 @@
                 <a class="footer-logo" href="../index.html"><img src="assets/logotype.svg" alt="logotype"
                         title="logotype" width="180px"></a>
                 <nav class="footer-nav navbar navbar-expand-xl navbar-dark justify-content-between px-5 pt-4">
-                    <a class="navbar-brand" href="../index.html"><img src="assets/logotype.svg" alt="logotype"
+                    <a class="navbar-brand" href="index.html"><img src="assets/logotype.svg" alt="logotype"
                             title="logotype" width="120px"></a>
                     <div class="justify-content-end">
                         <ul class="navbar-footer">
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/about.html">about</a>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#services">Tjänster<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/services.html">services</a>
+                                <a class="nav-link" href="#cases">Kundcase</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/cases.html">cases</a>
+                                <a class="nav-link" href="#about">Om mig</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/contact.html">contact</a>
+                                <a class="nav-link" href="#contact">Kontakt</a>
                             </li>
                         </ul>
                     </div>

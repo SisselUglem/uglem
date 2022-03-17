@@ -22,7 +22,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #a08b62 !important;
+    color: #2b2925 !important;
 }
 
 .navbar-brand:hover {
@@ -49,7 +49,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
   
 .vl {
@@ -76,14 +76,13 @@ h1 {
     line-height:67px;
     letter-spacing:.05em;
     color: #ffffff;
-    text-transform: uppercase;
 }
 h2 {
     font-family: 'Maven Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size:25px;
-    line-height:30px;
+    font-size:30px;
+    line-height:35px;
     letter-spacing:.1em;
     color: #ffffff;
     text-transform: uppercase;
@@ -93,8 +92,8 @@ h3 {
     font-family: 'Maven Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size:17px;
-    line-height:22px;
+    font-size:20px;
+    line-height:25px;
     letter-spacing:.05em;
     color: #ffffff;
 }
@@ -115,8 +114,8 @@ h5 {
     font-family: 'Maven Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size:11px;
-    line-height:26px;
+    font-size:13px;
+    line-height:30px;
     letter-spacing:.05em;
     color: #ffffff;
     text-transform: uppercase;
@@ -126,15 +125,43 @@ p{
     font-family: 'Montserrat', sans-serif;
     font-style:normal;
     font-weight:300;
-    font-size:14px;
-    line-height:20px;
+    font-size:16px;
+    line-height:22px;
     color:rgb(207, 207, 207);
 }
 
 
 
 /*----end typography----*/
+
+/*----icons----*/
+.fa-solid {
+    color: white;
+    font-size: 30px;
+    transition: transform 0.2s;
+}
+
+.fa-solid:hover {
+    color: #a08b62;
+    transform: scale(1.1);
+}
+.fa-solid:active {
+    color: #7e6d4d;
+}
+.fa-solid:focus {
+    color: #7e6d4d;
+}
+
+
+/*----end icons----*/
+
+
+
 /*----layout----*/
+
+.eng {
+    display: none;
+}
 
 .text-end {
     text-align: end;
@@ -213,24 +240,29 @@ p{
     transform: scale(1.05);
 }
 
+.case__container {
+    max-width: 70%;
+    width: 100%;
+}
+
 /*----end layout----*/
 /*----buttons----*/
 .button-main {
     background-color: transparent;
     font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 15px;
     letter-spacing: 2.8px;
     color:#a08b62;
     display: flex;
-    transition: transform .2s;
+    justify-content: center;
+    align-items: center;
     border: none;
-    padding: 0%;
+    padding: 0% 0% 0% 1%;
     text-decoration: none !important;
 }
 
 .button-main:hover {
-    transform: scale(1.1);
     background-color: transparent;
     color: white;
 }
@@ -245,6 +277,17 @@ p{
     box-shadow: none;
 }
 
+.btn-icon {
+    font-size: 13px;
+    color:inherit;
+    display: flex;
+    padding-left: 5%;
+}
+
+.btn-icon:hover {
+    color:inherit;
+}
+
 /*----end buttons----*/
 /*----footer----*/
 
@@ -254,7 +297,7 @@ footer {
 }
 
 .footer {
-    max-width: 1140px !important;
+    max-width: 1240px !important;
     width: 100% !important;
     padding: 4% 2%;
     margin: auto;
@@ -349,6 +392,7 @@ footer {
     }
 
     .navbar-nav {
+        flex-direction: column !important;
         padding-top: 25%;
         padding-right: 17px;
     }
@@ -358,6 +402,10 @@ footer {
         padding: 15px 16px !important;
     }
 
+    .footer-nav {
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -365,7 +413,6 @@ footer {
     h2 {
         max-width: 80%;
         width: 100%;
-        margin: auto;
         padding: 4% 0%;
     }
 
@@ -379,6 +426,10 @@ footer {
         color: #cfcfcf;
         writing-mode: vertical-rl;
         text-orientation: mixed;
+    }
+
+    .aside {
+        height: 90vh;
     }
 
     .button-main {
@@ -415,6 +466,16 @@ footer {
     .article__col-2 {
         max-width: 80%;
     }
+    .case__container {
+        padding: 15% 0%;
+        max-width: 80%;
+    }
+
+    .cases-template {
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -423,11 +484,10 @@ footer {
         font-family: 'Maven Pro', sans-serif;
         font-style: normal;
         font-weight: 500;
-        font-size:30px;
-        line-height:35px;
+        font-size:39px;
+        line-height:44px;
         letter-spacing:.05em;
         color: #ffffff;
-        text-transform: uppercase;
     }
 
     .navbar {
@@ -436,6 +496,17 @@ footer {
 
     .vl {
         border-left: 1px solid #cfcfcfa2;
+    }
+
+    .cases__headline {
+        font-size: 15px;
+        line-height: 20px;
+
+    }
+    .cases-template {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(6, 1fr);
     }
 
 
@@ -448,5 +519,16 @@ footer {
     }
     .article__headline {
         padding-top: 7%;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    h1 {
+        font-size:36px;
+        line-height:41px;
     }
 }
