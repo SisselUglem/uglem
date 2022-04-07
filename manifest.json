@@ -1,0 +1,15 @@
+{
+    "name": "Uglem Webbdesign",
+    "short_name": "Uglem",
+    "description": "Webbdesign & Front end Utveckling",
+    "start_url": "https://www.uglem.se/",
+    "display": "standalone",
+    "background_color": "#161616",
+    "theme_color": "#a08b62",
+    "icons": [{
+      "src": "assets/logotype.png",
+      "sizes": "256x256",
+      "type": "image/webp"
+    }]
+}
+

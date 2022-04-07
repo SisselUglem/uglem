@@ -1,5 +1,5 @@
 body {
-    background-color: #161616;
+    background-color: #1f1e1e;
 }
 
 #toggler {
@@ -43,7 +43,7 @@ body {
     width: 100%;
     padding-left: 0px;
     float: left;
-    background-color: #161616;
+    background-color: #1f1e1e;
     color: rgb(233, 233, 233);
     display: flex;
     flex-direction: column;
@@ -60,7 +60,6 @@ body {
 /*----typography----*/
 
 a {
-    color: transparent !important;
     text-decoration: none !important;
 }
 
@@ -135,23 +134,31 @@ p{
 /*----end typography----*/
 
 /*----icons----*/
-.fa-solid {
+.icon-a {
     color: white;
     font-size: 30px;
-    transition: transform 0.2s;
 }
 
-.fa-solid:hover {
-    color: #a08b62;
-    transform: scale(1.1);
+.icon-a:hover {
+    color: #cfa21a;
 }
-.fa-solid:active {
-    color: #7e6d4d;
+.icon-a:active {
+    color: rgb(119, 88, 16);
 }
-.fa-solid:focus {
-    color: #7e6d4d;
+.icon-a:focus {
+    color: rgb(119, 88, 16);
 }
 
+.icon-b {
+    color: #cfa21a;
+    font-size: 20px;
+}
+
+.icon-c {
+    color: #cfa21a;
+    font-size: 35px;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
 
 /*----end icons----*/
 
@@ -181,7 +188,7 @@ p{
 }
 
 .span {
-    color: #a08b62;
+    color: #cfa21a;
 }
 
 .hr {
@@ -248,22 +255,35 @@ p{
 /*----end layout----*/
 /*----buttons----*/
 .button-main {
-    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;;
+    background-color: #cfa21a;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 15px;
+    /*background-color: transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
     letter-spacing: 2.8px;
-    color:#a08b62;
+    color:#966f11;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     padding: 0% 0% 0% 1%;
-    text-decoration: none !important;
+    text-decoration: none !important;*/
 }
 
 .button-main:hover {
-    background-color: transparent;
+    background-color: #966e1169;
     color: white;
 }
 
@@ -292,12 +312,15 @@ p{
 /*----footer----*/
 
 footer {
-    background-color: #161616;
+    background-color: #1f1e1e;
     height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
-    max-width: 1240px !important;
+    max-width: 1340px !important;
     width: 100% !important;
     padding: 4% 2%;
     margin: auto;
@@ -319,7 +342,32 @@ footer {
 }
 
 .navbar-footer .nav-link:hover {
-    color: #a08b62 !important;
+    color: #cfa21a !important;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer-icon {
+    color: white !important;
+    font-size: 25px;
+}
+
+.footer-icon:hover {
+    color: #cfa21a !important;
+    cursor: pointer;
+}
+
+.footer-icon:active {
+    color: rgb(99, 71, 15) !important;
+    cursor: pointer;
+}
+.footer-icon:focus {
+    color: rgb(99, 71, 15) !important;
+    cursor: pointer;
 }
 
 
@@ -388,7 +436,7 @@ footer {
     }
 
     .navbar {
-        padding: 6% 4% 0% 4% !important;
+        padding: 4% !important;
     }
 
     .navbar-nav {
@@ -404,6 +452,7 @@ footer {
 
     .footer-nav {
         flex-direction: column;
+        gap: 40px;
     }
 
 }
@@ -441,6 +490,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 10% 2%;
     }
 
     .footer-logo {
@@ -476,6 +526,28 @@ footer {
         grid-template-columns: repeat(3, 33.33%);
         grid-template-rows: repeat(4, 1fr);
     }
+
+    .footer-icon:hover {
+        color: white;
+        cursor: pointer;
+    }
+    
+    .footer-icon:active {
+        color: #cfa21a;
+        cursor: pointer;
+    }
+    .footer-icon:focus {
+        color: #cfa21a;
+        cursor: pointer;
+    }
+    .icon-c {
+        font-size: 25px;
+    }
+    
+    .skill-text {
+        font-size: 9px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -509,6 +581,13 @@ footer {
         grid-template-rows: repeat(6, 1fr);
     }
 
+    #skills {
+        padding-top: 4%;
+        padding-bottom: 4%;
+        min-height: 80vh;
+        height: 100%;
+    }
+
 
 }
 
@@ -530,5 +609,13 @@ footer {
     h1 {
         font-size:36px;
         line-height:41px;
+    }
+
+    .icon-c {
+        font-size: 20px;
+    }
+    
+    .icon-b {
+        font-size: 16px;
     }
 }
