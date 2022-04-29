@@ -61,6 +61,8 @@ body {
 
 a {
     text-decoration: none !important;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 a button{
@@ -140,22 +142,22 @@ p{
 }
 
 .icon-a:hover {
-    color: #cfa21a;
+    color: #a58649;
 }
 .icon-a:active {
-    color: rgb(119, 88, 16);
+    color: #4e4430;
 }
 .icon-a:focus {
-    color: rgb(119, 88, 16);
+    color: #4e4430;
 }
 
 .icon-b {
-    color: #cfa21a;
+    color: #a58649;
     font-size: 20px;
 }
 
 .icon-c {
-    color: #cfa21a;
+    color: #a58649;
     font-size: 35px;
     text-shadow: rgb(0, 0, 0) 1px 0 10px;
 }
@@ -188,7 +190,7 @@ p{
 }
 
 .span {
-    color: #cfa21a;
+    color: #a58649;
 }
 
 .hr {
@@ -210,7 +212,7 @@ p{
 }
 
 .article__container {
-    padding: 8%;
+    padding: 8% 8% 4% 8%;
     flex-direction: column;
 }
 
@@ -256,7 +258,7 @@ p{
 /*----buttons----*/
 .button-main {
     font-family: 'Montserrat', sans-serif;;
-    background-color: #cfa21a;
+    background-color: #a58649;
     color: black;
     border: none;
     padding: 10px 20px;
@@ -283,18 +285,20 @@ p{
 }
 
 .button-main:hover {
-    background-color: #966e1169;
+    background-color: #4e4430;
     color: white;
 }
 
 .button-main:active {
-    color: rgb(175, 175, 175);
+    color: black;
     box-shadow: none;
+    background-color: #a58649;
 }
 
 .button-main:focus {
-    color: rgb(175, 175, 175);
+    color: black;
     box-shadow: none;
+    background-color: #a58649;
 }
 
 .btn-icon {
@@ -342,7 +346,7 @@ footer {
 }
 
 .navbar-footer .nav-link:hover {
-    color: #cfa21a !important;
+    color: #a58649!important;
 }
 
 .social-icons {
@@ -357,7 +361,7 @@ footer {
 }
 
 .footer-icon:hover {
-    color: #cfa21a !important;
+    color: #a58649 !important;
     cursor: pointer;
 }
 
@@ -533,11 +537,11 @@ footer {
     }
     
     .footer-icon:active {
-        color: #cfa21a;
+        color: #a58649;
         cursor: pointer;
     }
     .footer-icon:focus {
-        color: #cfa21a;
+        color: #a58649;
         cursor: pointer;
     }
     .icon-c {

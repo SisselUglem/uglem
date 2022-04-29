@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Uglem">
+    <meta name="keywords" content="Uglem, webbdesign, design">
     <meta name="description" content="Webbdesign & Front end Utveckling">
     <meta name="theme-color" content="#a08b62">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -103,12 +103,12 @@
                 <div class="about__row flex-center-start">
                     <div class="about__col">
                         <h3 class="eng about__col-headline">what I do</h3>
-                        <h3 class="about__col-headline">Webbutveckling</h3>
+                        <h3 class="about__col-headline">Webbdesign</h3>
                         <p class="eng">
                             I develop and design user-friendly websites, graphic layouts and logos.
                             Share your ideas with me and we will create a graphic profile based on your needs.
                         </p>
-                        <p class="pb-4">Jag utvecklar och designar användarvänliga hemsidor, grafiska layouter och logotyper.
+                        <p class="pb-4">Uglem utvecklar och designar användarvänliga hemsidor, grafiska layouter och logotyper.
                             <br><br>Dela dina idéer med mig så skapar vi en grafisk profil utifrån dina behov.
                         </p>
                         <button onclick="location.href='#cases'" class="button-main" type="submit">
@@ -129,8 +129,8 @@
                         </div>
                     </div>
                     <div class="about__col">
-                        <img class="portrait img-fluid" src="assets/sissel_3.2.webp" alt="Portrait" title="Portrait">
-                        <img class="portrait_resp img-fluid" src="assets/sissel_3.2_resp.webp" alt="Portrait" title="Portrait">
+                        <img class="portrait img-fluid" src="assets/sissel_3.3.webp" alt="Portrait" title="Portrait">
+                        <img class="portrait_resp img-fluid" src="assets/sissel_3.3_resp.webp" alt="Portrait" title="Portrait">
                     </div>
                 </div>
             </div>
@@ -152,8 +152,7 @@
                     </p>
                     <p class="services__text">
                         Din logotyp är ditt ansikte utåt och representerar ditt företag varje sekund.
-                        Jag hjälper dig att skapa en unik logotyp utifrån din affärsidé och grafiska profil och
-                        lyckönskningar.
+                        Uglem hjälper dig att skapa en unik logotyp utifrån din affärsidé och grafiska profil.
                     </p>
                     <h4 class="services__vrt">creative solutions</h4>
                 </div>
@@ -167,7 +166,7 @@
                         up
                         the site they see the information in a format that is easy to read and relevant.
                     </p>
-                    <p class="services__text mt-md-2 mt-0">Gör dina idéer till verklighet! <br>Jag utvecklar användarvänliga webbapplikationer. Målet med att designa en webbplats är att säkerställa din och användarens upplevelse.
+                    <p class="services__text mt-md-2 mt-0">Gör dina idéer till verklighet! <br>Uglem utvecklar användarvänliga webbapplikationer. Målet med att designa en webbplats är att säkerställa din och användarens upplevelse.
                     </p>
                     <h4 class="services__vrt">creative solutions</h4>
                 </div>
@@ -182,7 +181,7 @@
                         calligraphy and typography.
                     </p>
                     <p class="services__text">
-                        Jag hjälper dig med användning av typsnitt, logotyper och färger i trycksaker
+                        Uglem hjälper dig med användning av typsnitt, logotyper och färger i trycksaker
                         eller i digitala medier. Mitt fokus ligger på användargränssnitt, heraldik,
                         kalligrafi och typografi.
                     </p>
@@ -193,7 +192,7 @@
                         title="Sökoptimering">
                     <h3 class="services__headline">sökoptimering</h3>
                     <p class="services__text">
-                        Vill du synas bättre på nätet och i sökmototer? Jag hjälper er optimera kampanjer i Google Ads och förbereda Google Analytics samt att analysera, estimera och optimera insatser inom både SEO och SEM.
+                        Vill du synas bättre på nätet och i sökmototer? Uglem hjälper er optimera kampanjer i Google Ads och förbereda Google Analytics samt att analysera, estimera och optimera insatser inom både SEO och SEM.
                     </p>
                     <h4 class="services__vrt">creative solutions</h4>
                 </div>
@@ -224,17 +223,14 @@
         <section class="cases">
             <div class="cases-template">
                 <!-----ITEM-1----->
-                <div class="grid-item" data-toggle="collapse" data-target="#fjallbrollop"
-                    aria-expanded="false" aria-controls="fjallbrollop">
+                <div class="grid-item" data-toggle="modal" data-target="#fjallbrollop">
                     <img class="img-cases img-fluid" src="assets/cases/fjallbrollop-slide.webp"
                         alt="Fjällbröllop & Event" title="Fjällbröllop & Event">
                     <h3 class="cases__headline">Fjällbröllop <br>& Event</h3>
                 </div>
-                <div id="fjallbrollop" class="cases__info collapse">
+                <div id="fjallbrollop" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="fjallbrollop" aria-hidden="true">
                     <div class="d-flex justify-content-end col-12 pb-3">
-                        <button class="close" type="button" data-toggle="collapse"
-                            data-target="#fjallbrollop" aria-expanded="false" aria-controls="fjallbrollop">
-                        </button>
+                        <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-12 pt-3">
@@ -245,9 +241,9 @@
                                 I have had the honor of developing a website where every company can be seen and
                                 marketed.
                             </p>
-                            <p class="pt-3">Detta initiativ är flera företag som gått samman för att erbjuda ett komplett koncept för bröllop 
+                            <p class="pt-2 cases__info_text">Detta initiativ är flera företag som gått samman för att erbjuda ett komplett koncept för bröllop 
                                 i fjällen. <br><br>Jag har haft äran att utveckla deras hemsida där alla företag som är verksamma i projektet 
-                                får synas och markadsföras.
+                                får synas och markadsföras samt deras löpande annonsmaterial.
                                 <br><br>
                             </p>
                             <a class="text-decoration-none" href="http://fjallbrollopoevent.se/" target="_blank">
@@ -256,23 +252,58 @@
                                 </button>
                             </a>
                         </div>
-                        <div class="col-md-6">
-                            <img class="img-fluid cases_img" src="assets/cases/cases-info-fj.png" alt="Fjällbröllop & Event" title="Fjällbröllop & Event">
+                        <div class="col-md-6 justify-content-center d-flex">
+                            <div class="grid_templete">
+                                <div class="grid_item item_1">
+                                    <a data-toggle="modal" data-target="#fjallbrollop_modal_ad">
+                                        <img class="img-fluid" src="assets/fjallbrollop_ad.webp" alt="Fjällbröllop & Event Annons" title="Fjällbröllop & Event Annons">
+                                        <h2 class="cases_info_headline">Layout</h2>
+                                    </a>
+                                    </div>
+                                <div class="grid_item item_2">
+                                    <a data-toggle="modal" data-target="#fjallbrollop_modal_insta">
+                                        <img class="img-fluid" src="assets/fjällbröllop_instagram_1080x1080.webp" alt="Fjällbröllop & Event Annons" title="Fjällbröllop & Event Annons">
+                                        <h2 class="cases_info_headline">Annonser</h2>
+                                    </a>
+                                </div>
+                                <div class="grid_item item_3">
+                                    <a href="http://fjallbrollopoevent.se/" target="_blank">
+                                        <img class="img-fluid" src="assets/fjallbrollop_web.webp" alt="Fjällbröllop & Event hemsida" title="Fjällbröllop & Event hemsida">
+                                        <h2 class="cases_info_headline">Webbdesign</h2>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="fjallbrollop_modal_ad" tabindex="-1" role="dialog" aria-labelledby="FjällbröllopAnnons" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <img src="assets/fjallbrollop_ad.webp" alt="">
+                      </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="fjallbrollop_modal_insta" tabindex="-1" role="dialog" aria-labelledby="FjällbröllopAnnons" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <img src="assets/fjällbröllop_instagram_1080x1080.webp" alt="">
+                      </div>
+                    </div>
+                </div>
+
                 <!-----ITEM-2----->
-                <div class="grid-item" data-toggle="collapse" data-target="#mmharjedalen"
-                    aria-expanded="false" aria-controls="mmharjedalen">
+                <div class="grid-item" data-toggle="modal" data-target="#mmharjedalen">
                     <img class="img-cases img-fluid" src="assets/cases/mmh-slide.webp" alt="Möbelmästarna Härjedalen"
                         title="Möbelmästarna Härjedalen">
                     <h3 class="cases__headline">Möbelmästarna <br>Härjedalen</h3>
                 </div>
-                <div id="mmharjedalen" class="cases__info collapse">
+                <div id="mmharjedalen" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="mmharjedalen" aria-hidden="true">
                     <div class="d-flex justify-content-end col-12 pb-3">
-                        <button class="close" type="button" data-toggle="collapse"
-                            data-target="#mmharjedalen" aria-expanded="false" aria-controls="mmharjedalen">
-                        </button>
+                        <div class="d-flex justify-content-end col-12 pb-3">
+                            <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-12 pt-3">
@@ -283,8 +314,8 @@
                                 Here, the company's interior design services and ready-made furniture packages are
                                 described.
                             </p>
-                            <p class="pt-3">
-                                Möbelmästarna Härjedalen ingår i kedjan möbelmästarna som har en gemensam plattform för detaljhandel.
+                            <p class="pt-2 cases__info_text">
+                                Möbelmästarna Härjedalen ingår i kedjan Möbelmästarna som har en gemensam plattform för detaljhandel.
                                 <br><br>Min uppgift i det här projektet var att skapa en fristående hemsida specifikt för Möbelmästarna Härjedalen där 
                                 företagets inredningstjänster och färdiga möbelpaket beskrivs.
                                 <br><br>Jag designar även löpande annonseringsmaterial för företaget.</p>
@@ -294,23 +325,135 @@
                                 </button>
                             </a>
                         </div>
-                        <div class="col-md-6">
-                            <img class="img-fluid cases_img" src="assets/cases/cases-info-mm.webp" alt="Möbelmästarna Härjedalen" title="Möbelmästarna Härjedalen">
+                        <div class="col-md-6 justify-content-center d-flex">
+                            <div class="grid_templete">
+                                <div class="grid_item item_1">
+                                    <a data-toggle="modal" data-target="#mm_modal_layout">
+                                        <img class="img-fluid" src="assets/cases/mm_flyer.webp" alt="Möbelmästarna Härjedalen Layouts" title="Möbelmästarna Härjedalen Layouts">
+                                        <h2 class="cases_info_headline">Layout</h2>
+                                    </a>
+                                </div>
+                                <div class="grid_item item_2">
+                                    <a data-toggle="modal" data-target="#mm_modal_ads">
+                                        <img class="img-fluid" src="assets/mm_annonser.webp" alt="Möbelmästarna Härjedalen Annonser" title="Möbelmästarna Härjedalen Annonser">
+                                        <h2 class="cases_info_headline">Annonser</h2>
+                                    </a>
+                                </div>
+                                <div class="grid_item item_3">
+                                    <a data-toggle="modal" data-target="#mm_modal_web">
+                                        <img class="img-fluid" src="assets/cases/mm_web.webp" alt="Möbelmästarna Härjedalen Hemsida" title="Möbelmästarna Härjedalen Hemsida">
+                                        <h2 class="cases_info_headline">Webbdesign</h2>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!--MM Layouts-->
+                <div class="modal fade" id="mm_modal_layout" tabindex="-1" role="dialog" aria-labelledby="mmlayout" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div id="mm_carousel_layout" class="carousel" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#mm_carousel_layout" data-slide-to="0" class="active"></li>
+                              <li data-target="#mm_carousel_layout" data-slide-to="1"></li>
+                              <li data-target="#mm_carousel_layout" data-slide-to="2"></li>
+                              <li data-target="#mm_carousel_layout" data-slide-to="3"></li>
+                              <li data-target="#mm_carousel_layout" data-slide-to="4"></li>
+                              <li data-target="#mm_carousel_layout" data-slide-to="5"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/cases/mm_layout/layout_1.webp" alt="Inredning">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/cases/mm_layout/layout_2.webp" alt="Inredning">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/cases/mm_layout/layout_3.webp" alt="Layout">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/cases/mm_layout/layout_4.webp" alt="Layout">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#mm_carousel_layout" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#mm_carousel_layout" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <!--MM Slide ads-->
+                <div class="modal fade" id="mm_modal_ads" tabindex="-1" role="dialog" aria-labelledby="mm_ads" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div id="mm_carousel" class="carousel" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#mm_carousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#mm_carousel" data-slide-to="1"></li>
+                              <li data-target="#mm_carousel" data-slide-to="2"></li>
+                              <li data-target="#mm_carousel" data-slide-to="3"></li>
+                              <li data-target="#mm_carousel" data-slide-to="4"></li>
+                              <li data-target="#mm_carousel" data-slide-to="5"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/cases/mm ads/Annons Helsida Jul.webp" alt="Annons Helsida Jul">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/cases/mm ads/Annons helsida Lodge & Lya.webp" alt="Annons Helsida">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/cases/mm ads/Annons Kvartssida.webp" alt="Annons Kvartssida">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/cases/mm ads/Halvsida December.webp" alt="Annons Halvsida">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/cases/mm ads/Annons halvsida sommar.webp" alt="Annons Halvsida">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/cases/mm ads/Annons halvsida möbelpaket.webp" alt="Annons Halvsida">
+                                </div>
+                              
+                            </div>
+                            <a class="carousel-control-prev" href="#mm_carousel" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#mm_carousel" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <!--MM web-->
+                <div class="modal fade" id="mm_modal_web" tabindex="-1" role="dialog" aria-labelledby="mmlayout" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <img src="assets/cases/mm_web.webp" alt="Möbelmästarna Härjedalen Flyer">
+                      </div>
+                    </div>
+                </div>
                 <!-----ITEM-3----->
-                <div class="grid-item" data-toggle="collapse" data-target="#skoter"
-                aria-expanded="false" aria-controls="skoter">
+                <div class="grid-item" data-toggle="modal" data-target="#skoter">
                     <img class="img-cases img-fluid" src="assets/cases/skoter-slide.webp" alt="Messlingen Skoteruthyrning"
                         title="Messlingen Skoteruthyrning">
                     <h3 class="cases__headline">Messlingen <br>Skoteruthyrning</h3>
                 </div>
-                <div id="skoter" class="cases__info collapse">
+                <div id="skoter" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="skoter" aria-hidden="true">
                     <div class="d-flex justify-content-end col-12 pb-3">
-                        <button class="close" type="button" data-toggle="collapse"
-                            data-target="#skoter" aria-expanded="false" aria-controls="skoter">
-                        </button>
+                        <div class="d-flex justify-content-end col-12 pb-3">
+                            <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-12 pt-3">
@@ -319,9 +462,9 @@
                                 In this project I have designed and developed the website for the company 
                                 Messlingen Skoteruthyrning. This particular page is built in Wordpress.
                             </p>
-                            <p class="pt-3">
-                                I detta projekt har jag designat och utvecklat hemsidan för företaget Messlingen Skoteruthyrning. 
-                                <br><br>Företaget bedriver verksamhet skoteruthyrning med guidade turer i härjedalens fjällvärld. 
+                            <p class="pt-2 cases__info_text">
+                                I det här projektet har jag designat och utvecklat hemsidan för företaget Messlingen Skoteruthyrning. 
+                                <br><br>Företaget bedriver verksamhet inom skoteruthyrning med guidade turer i härjedalens fjällvärld. 
                                 Under sommarhalvåret ebjuder företaget även tjänster inom hantverk så som renoveringar och utbyggnationer, även nybyggnationer<br><br></p>
                             <a class="text-decoration-none" href="https://www.messlingenskoter.se/" target="_blank">
                                 <button class="button-main">
@@ -329,23 +472,61 @@
                                 </button>
                             </a>
                         </div>
-                        <div class="col-md-6">
-                            <img class="img-fluid cases_img" src="assets/cases/cases-info-skoter.webp" alt="Messlingen Skoteruthyrning" title="Messlingen Skoteruthyrning">
+                        <div class="col-md-6 justify-content-center d-flex">
+                            <div class="grid_templete">
+                                <div class="grid_item item_1">
+                                    <a data-toggle="modal" data-target="#skoter_modal_mobile">
+                                        <img class="img-fluid" src="assets/cases/messlingen_mobile.webp" alt="Messlingen Skoteruthyrning Hemsida" title="Messlingen Skoteruthyrning Hemsida">
+                                    </a>
+                                </div>
+                                <div class="grid_item item_2">
+                                    <a data-toggle="modal" data-target="#skoter_modal_screen">
+                                        <img class="img-fluid" src="assets/cases/messlingen_screen.webp" alt="Messlingen Skoteruthyrning Hemsida" title="Messlingen Skoteruthyrning Hemsida">
+                                    </a>
+                                </div>
+                                <div class="grid_item item_3">
+                                    <a data-toggle="modal" data-target="#skoter_modal_layout">
+                                        <img class="img-fluid" src="assets/cases/messlingen_web_layout.webp" alt="Fjällorren hemsida" title="Fjällorren hemsida">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="skoter_modal_mobile" tabindex="-1" role="dialog" aria-labelledby="skoterwebb" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <img src="assets/cases/messlingen_mobile.webp" alt="Messlingen Skoteruthyrning Hemsida">
+                      </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="skoter_modal_screen" tabindex="-1" role="dialog" aria-labelledby="skoterwebb" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <img src="assets/cases/messlingen_screen.webp" alt="Messlingen Skoteruthyrning Hemsida">
+                      </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="skoter_modal_layout" tabindex="-1" role="dialog" aria-labelledby="skoterwebb" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <img src="assets/cases/messlingen_web_layout.webp" alt="Messlingen Skoteruthyrning Hemsida">
+                      </div>
+                    </div>
+                </div>
                 <!-----ITEM-4----->
-                <div class="grid-item" data-toggle="collapse" data-target="#fjallorren"
+                <div class="grid-item" data-toggle="modal" data-target="#fjallorren"
                     aria-expanded="false" aria-controls="fjallorren">
                     <img class="img-cases img-fluid" src="assets/cases/fjallorren-slide.webp" alt="Fjällorren"
                         title="Fjällorren">
                     <h3 class="cases__headline pt-2">Fjällorren</h3>
                 </div>
-                <div id="fjallorren" class="cases__info collapse">
+                <div id="fjallorren" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="fjallorren" aria-hidden="true">
                     <div class="d-flex justify-content-end col-12 pb-3">
-                        <button class="close" type="button" data-toggle="collapse"
-                            data-target="#fjallorren" aria-expanded="false" aria-controls="fjallorren">
-                        </button>
+                        <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-12 pt-3">
@@ -354,31 +535,64 @@
                                 Fjällorren is a traditional restaurant at the foot of Särvfjället.
                                 Together with them, I have developed the website and advertising material
                             </p>
-                            <p class="pt-3">Vid foten av Särvfjället hittar ni restaurang Fjällorren. En liten restaurang med glädje till natur och upplevelser.
-                                <br><br>Tillsammans med dem har jag tagit utvecklat företagets hemsida och löpande annonsmaterial<br><br></p>
+                            <p class="pt-2 cases__info_text">Vid foten av Särvfjället hittar ni restaurang Fjällorren. En liten restaurang med glädje till natur och upplevelser.
+                                <br><br>Tillsammans med Fjällorren har jag utvecklat och designat företagets hemsida samt löpande annonsmaterial<br><br></p>
                             <a class="text-decoration-none" href="https://www.fjallorren.se/" target="_blank">
                                 <button class="button-main">
                                     besök hemsida
                                 </button>
                             </a>
                         </div>
-                        <div class="col-md-6">
-                            <img class="img-fluid cases_img" src="assets/cases/cases-info-or.webp" alt="Fjällorren" title="Fjällorren">
+                        <div class="col-md-6 justify-content-center d-flex">
+                            <div class="grid_templete">
+                                <div class="grid_item item_1">
+                                    <a data-toggle="modal" data-target="#fjallorren_modal_ads">
+                                        <img class="img-fluid" src="assets/fjallorren_annons.webp" alt="Fjällorren Annons" title="Fjällorren Annons">
+                                        <h2 class="cases_info_headline">Annons</h2>
+                                    </a>
+                                </div>
+                                <div class="grid_item item_2">
+                                    <a data-toggle="modal" data-target="#fjallorren_modal_skylt">
+                                        <img class="img-fluid" src="assets/fjallorren_skylt.webp" alt="Fjällorren Skylt" title="Fjällorren Skylt">
+                                        <h2 class="cases_info_headline">Logotype</h2>
+                                    </a>
+                                </div>
+                                <div class="grid_item item_3">
+                                    <a href="https://www.fjallorren.se/" target="_blank">
+                                        <img class="img-fluid" src="assets/fjallorren_web.webp" alt="Fjällorren hemsida" title="Fjällorren hemsida">
+                                        <h2 class="cases_info_headline">Webbdesign</h2>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!--Fjällorren ads-->
+                <div class="modal fade" id="fjallorren_modal_ads" tabindex="-1" role="dialog" aria-labelledby="Fjallorrenannons" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <img src="assets/Fjallorren_annons_1.webp" alt="">
+                      </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="fjallorren_modal_skylt" tabindex="-1" role="dialog" aria-labelledby="Fjallorrenannons" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <img src="assets/fjallorren_skylt_1.webp" alt="">
+                      </div>
+                    </div>
+                </div>
                     <!-----ITEM-5----->
-                    <div class="grid-item" data-toggle="collapse"
-                        data-target="#hovslageri" aria-expanded="false" aria-controls="hovslageri">
+                    <div class="grid-item" data-toggle="modal" data-target="#hovslageri">
                         <img class="img-cases img-fluid" src="assets/cases/hovslageri-slide.webp"
                             alt="Nysäterns hovslageri" title="Nysäterns hovslageri">
                         <h3 class="cases__headline">Nysäterns <br>Hovslageri</h3>
                 </div>
-                    <div id="hovslageri" class="cases__info collapse">
+                    <div id="hovslageri" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="hovslageri" aria-hidden="true">
                         <div class="d-flex justify-content-end col-12 pb-3">
-                            <button class="close" type="button" data-toggle="collapse"
-                                data-target="#hovslageri" aria-expanded="false" aria-controls="hovslageri">
-                            </button>
+                            <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-12 pt-3">
@@ -387,38 +601,40 @@
                                     Nysäterns Hovslageri is a local company in Härjedalen that offers services in farrowing and all-service. 
                                     I have been entrusted with designing the company's logo and website as well as marketing materials.
                                 </p>
-                                <p class="pt-3">Nysäterns Hovslageri är ett lokalt företag i Härjedalen som erbjuder tjänster inom grisning och allservice. 
+                                <p class="pt-2 cases__info_text">Nysäterns Hovslageri är ett lokalt företag i Härjedalen som erbjuder tjänster inom grisning och allservice. 
                                     <br><br>Jag har fått förtroendet att designa företagets logotyp och marknadsföringsmaterial samt att utvecklandet av deras hemsida.<br><br></p>
-                                <a class="text-decoration-none" href="#" target="_blank">
-                                    <button class="button-main">
-                                        besök hemsida
-                                    </button>
+                            </div>
+                            <div class="col-md-6 justify-content-center d-flex">
+                                <a data-toggle="modal" data-target="#hovslageri_logotype">
+                                    <img class="img-fluid cases_img" src="assets/cases/cases-info-hovslageri.webp" alt="Nysäterns Hovslageri Logotype" title="Nysäterns Hovslageri Logotype">
                                 </a>
                             </div>
-                            <div class="col-md-6">
-                                <img class="img-fluid cases_img" src="assets/cases/cases-info-hovslageri.webp" alt="Nysäterns Hovslageri" title="Nysäterns Hovslageri">
-                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="hovslageri_logotype" tabindex="-1" role="dialog" aria-labelledby="hovslageri_logotype" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                            <img src="assets/cases/hovslageri_logotype.webp" alt="Nysäterns Hovslageri Logotype" title="Nysäterns Hovslageri Logotype">
+                          </div>
                         </div>
                     </div>
                     <!-----ITEM-6----->
                     
-                    <div class="grid-item" data-toggle="collapse"
-                    data-target="#nysaternsfjallgard" aria-expanded="false" aria-controls="nysaternsfjallgard">
+                    <div class="grid-item" data-toggle="modal" data-target="#nysaternsfjallgard">
                         <img class="img-cases img-fluid" src="assets/cases/nysatern-slide.webp"
                             alt="Nysäterns Fjällgård" title="Nysäterns Fjällgård">
                         <h3 class="cases__headline">Nysäterns <br>Fjällgård</h3>
                     </div>
-                    <div id="nysaternsfjallgard" class="cases__info collapse">
+                    <div id="nysaternsfjallgard" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="nysaternsfjallgard" aria-hidden="true">
                         <div class="d-flex justify-content-end col-12 pb-3">
-                            <button class="close" type="button" data-toggle="collapse"
-                                data-target="#nysaternsfjallgard" aria-expanded="false" aria-controls="nysaternsfjallgard">
-                            </button>
+                            <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-12 pt-3">
                                 <h3>Nysäterns Fjällgård</h3>
-                                <p class="pt-3">Tillsammans med Nysäterns Fjällgård har jag tagit fram både hemsida, logotyp och reklam-
-                                    material så som annonser till tidsskrifter och sociala medier.
+                                <p class="pt-2 cases__info_text">Tillsammans med Nysäterns Fjällgård har jag utvecklat och designat både hemsida, logotyp och
+                                    grafiska layouter så som annonser till tidsskrifter och sociala medier.
                                     <br><br>Företaget driver en fjällgård med stuguthyrning och café vid foten av
                                     Sonfjället.<br><br></p>
                                 <a class="text-decoration-none" href="https://nysaternsfjallgard.se/" target="_blank">
@@ -427,23 +643,64 @@
                                     </button>
                                 </a>
                             </div>
-                            <div class="col-md-6">
-                                <img class="img-fluid cases_img" src="assets/cases/cases-info.webp" alt="Nysäterns Djällgård" title="Nysäterns Fjällgård">
+                            <div class="col-md-6 justify-content-center d-flex">
+                                <div class="grid_templete">
+                                    <div class="grid_item item_1">
+                                        <a data-toggle="modal" data-target="#nysatern_modal_ad">
+                                            <img class="img-fluid" src="assets/cases/nysaterns_flyer.webp" alt="Nysäterns Fjällgård Flyer" title="Nysäterns Fjällgård Annons">
+                                            <h2 class="cases_info_headline">Flyer</h2>
+                                        </a>
+                                    </div>
+                                    <div class="grid_item item_2">
+                                        <a data-toggle="modal" data-target="#nysatern_modal_skylt">
+                                            <img class="img-fluid" src="assets/cases/nysaterns_logo.webp" alt="Nysäterns Fjällgård Logotype" title="Nysäterns Fjällgård Logotype">
+                                            <h2 class="cases_info_headline">Logotype</h2>
+                                        </a>
+                                    </div>
+                                    <div class="grid_item item_3">
+                                        <a data-toggle="modal" data-target="#nysatern_modal_web">
+                                            <img class="img-fluid" src="assets/cases/nysatern_web_layout.webp" alt="Nysäterns Fjällgård hemsida" title="Nysäterns Fjällgård hemsida">
+                                            <h2 class="cases_info_headline">Webbdesign</h2>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--Nysäterns ads-->
+                    <div class="modal fade" id="nysatern_modal_ad" tabindex="-1" role="dialog" aria-labelledby="Nysaternannons" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                            <img src="assets/cases/nysaterns_flyer.webp" alt="Nysäterns Fjällgård Flyer">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="nysatern_modal_skylt" tabindex="-1" role="dialog" aria-labelledby="Nysaternannons" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                            <img src="assets/cases/nysaterns_logotype.webp" alt="Nysäterns Fjällgård Logotype">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="nysatern_modal_web" tabindex="-1" role="dialog" aria-labelledby="nysaternweb" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                            <img src="assets/cases/nysatern_web_layout.webp" alt="Nysäterns Fjällgård Hemsida">
+                        </div>
+                        </div>
+                    </div>
                     <!-----ITEM-7----->
-                    <div class="grid-item" data-toggle="collapse"
-                        data-target="#jakt" aria-expanded="false" aria-controls="jakt">
+                    <div class="grid-item" data-toggle="modal" data-target="#jakt">
                         <img class="img-cases img-fluid" src="assets/cases/jakt-slide.webp"
                             alt="Trumvallens Jakt" title="Trumvallens Jakt">
                         <h3 class="cases__headline">Trumvallens <br>Jakt</h3>
                     </div>
-                    <div id="jakt" class="cases__info collapse">
+                    <div id="jakt" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="jakt" aria-hidden="true">
                         <div class="d-flex justify-content-end col-12 pb-3">
-                            <button class="close" type="button" data-toggle="collapse"
-                                data-target="#jakt" aria-expanded="false" aria-controls="jakt">
-                            </button>
+                            <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-12 pt-3">
@@ -454,7 +711,7 @@
                                     The company also rents out hunting cabins in Jämtland's beautiful nature. 
                                     I've also been entrusted to design the company's marketing material such as ads for magazines and social media
                                 </p>
-                                <p class="pt-3">Tillsammans med Trumvallens Jakt har jag tagit fram en hemsida med syfte att visa information om deras olika jakter och hundkurser. 
+                                <p class="pt-2 cases__info_text">Tillsammans med Trumvallens Jakt har jag tagit fram en hemsida med syfte att visa information om deras olika jakter och hundkurser. 
                                     <br><br>Företaget hyr även ut jaktstugor i Jämtlands vackra natur. Jag har även fått förtroendet att utforma företagets marknadsföringsmaterial 
                                     såsom annonser för tidningar och sociala medier.<br><br>
                                 </p>
@@ -464,23 +721,53 @@
                                     </button>
                                 </a>
                             </div>
-                            <div class="col-md-6">
-                                <img class="img-fluid cases_img" src="assets/cases/cases-info-jakt.webp" alt="Trumvallens Jakt" title="Trumvallens Jakt">
+                            <div class="col-md-6 justify-content-center d-flex">
+                                <div class="grid_templete">
+                                    <div class="grid_item item_1">
+                                        <a data-toggle="modal" data-target="#jakt_modal_ad">
+                                            <img class="img-fluid" src="assets/jakt_ad.webp" alt="Trumvallens Jakt Annons" title="Trumvallens Jakt Annons">
+                                        </a>
+                                    </div>
+                                    <div class="grid_item item_2">
+                                        <a data-toggle="modal" data-target="#jakt_modal_skylt">
+                                            <img class="img-fluid" src="assets/jakt_ad_2.webp" alt="Trumvallens Jakt Annons" title="Trumvallens Jakt Annons">
+                                        </a>
+                                    </div>
+                                    <div class="grid_item item_3">
+                                        <a href="https://trumvallens-jakt.se/" target="_blank">
+                                            <img class="img-fluid" src="assets/jakt_web.webp" alt="Trumvallens Jakt Hemsida" title="Trumvallens Jakt Hemsida">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--Trumvallens ads-->
+                    <div class="modal fade" id="jakt_modal_ad" tabindex="-1" role="dialog" aria-labelledby="trumvallenad" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                            <img src="assets/jakt_ad_1.webp" alt="Trumvallens Jakt Annons">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="jakt_modal_skylt" tabindex="-1" role="dialog" aria-labelledby="trumvallenad" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                            <img src="assets/jakt_ad_3.webp" alt="Trumvallens Jakt Annons">
+                        </div>
+                        </div>
+                    </div>
                     <!-----ITEM-8----->
-                    <div class="grid-item" data-toggle="collapse"
-                        data-target="#kam" aria-expanded="false" aria-controls="kam">
+                    <div class="grid-item" data-toggle="modal" data-target="#kam">
                         <img class="img-cases img-fluid" src="assets/cases/kam-slide.webp"
                             alt="K.A.M" title="K.A.M">
                         <h3 class="cases__headline">K.A.M <br>Frisör Makeup</h3>
                     </div>
-                    <div id="kam" class="cases__info collapse">
+                    <div id="kam" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="kam" aria-hidden="true">
                         <div class="d-flex justify-content-end col-12 pb-3">
-                            <button class="close" type="button" data-toggle="collapse"
-                                data-target="#kam" aria-expanded="false" aria-controls="kam">
-                            </button>
+                            <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-12 pt-3">
@@ -488,58 +775,67 @@
                                 <p class="eng">
                                     I have had the honor of designing K.A.M's logo. The company runs a hair salon in Vemdalen / Härjedalen.
                                 </p>
-                                <p class="pt-3">Jag har haft äran att designa K.A.M's logotyp. <br>Företaget K.A.M. är en salong med kreativa frisörer mitt i Vemdalen by.
+                                <p class="pt-2 cases__info_text">Jag har haft äran att designa K.A.M's logotyp. <br>Företaget K.A.M. är en salong med kreativa frisörer mitt i Vemdalen by.
                                     <br><br>En trendmedveten frisörsalong med mycket hjärta.</p>
                             </div>
-                            <div class="col-md-6">
-                                <img class="img-fluid cases_img" src="assets/cases/cases-info-kam.webp" alt="K.A.M Frisör Makeup" title="K.A.M Frisör Makeup">
+                            <div class="col-md-6 justify-content-center d-flex">
+                                <a data-toggle="modal" data-target="#kam_logotype">
+                                    <img class="img-fluid cases_img" src="assets/cases/cases-info-kam.webp" alt="K.A.M Frisör Makeup" title="K.A.M Frisör Makeup">
+                                </a>
                             </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="kam_logotype" tabindex="-1" role="dialog" aria-labelledby="kam_logotype" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                            <img src="assets/cases/kam_logotype.webp" alt="K.A.M Frisör Makeup" title="K.A.M Frisör Makeup">
+                          </div>
                         </div>
                     </div>
                 
                 <!-----ITEM-9----->
-                <div class="grid-item" data-toggle="collapse" data-target="#hfg"
-                    aria-expanded="false" aria-controls="hfg">
+                <div class="grid-item" data-toggle="modal" data-target="#hfg">
                     <img class="img-cases img-fluid" src="assets/cases/hfg-slide.webp" alt="Hede Företagargrupp"
                         title="Hede Företagargrupp">
-                    <h3 class="cases__headline">Hede <br>Företagargrupp</h3>
+                    <h3 class="cases__headline">Restaurang <br>Mannes</h3>
                 </div>
-                <div id="hfg" class="cases__info collapse">
+                <div id="hfg" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="hfg" aria-hidden="true">
                     <div class="d-flex justify-content-end col-12 pb-3">
-                        <button class="close" type="button" data-toggle="collapse"
-                            data-target="#hfg" aria-expanded="false" aria-controls="hfg">
-                        </button>
+                        <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-12 pt-3">
-                            <h3>Hede Företagargrupp</h3>
-                            <p class="eng">
-                                I have had the honor of designing HFG's logo. 
-                                Hede Företagargrupp is a non-profit association that works to develop communities aound the
-                                area of Sonfjället and to stimulate the business climate.
-                            </p>
-                            <p class="pt-3">
-                                Jag har fått äran att designa HFG:s logotyp. 
-                                <br><br>Hede Företagargrupp är en ideell förening som arbetar för att utveckla samhällen runt Sonfjällets område och för att stimulera företagsklimatet.
+                            <h3>Restaurang Mannes</h3>
+                            <p class="pt-2 cases__info_text">
+                                Jag har fått äran att tillsammans med Restaurang Mannes designa företagets logotyp. 
+                                <br><br>
                             </p>
                         </div>
-                        <div class="col-md-6">
-                            <img class="img-fluid cases_img" src="assets/cases/cases-info-hfg.webp" alt="Hede Företagargrupp" title="Hede Företagargrupp">
+                        <div class="col-md-6 justify-content-center d-flex">
+                            <a data-toggle="modal" data-target="#mannes_logotype">
+                                <img class="img-fluid cases_img" src="assets/cases/cases-info-hfg.webp" alt="Restaurang Mannes Logotype" title="Restaurang Mannes Logotype">
+                            </a>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="mannes_logotype" tabindex="-1" role="dialog" aria-labelledby="mannes_logotype" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <img src="assets/cases/mannes_logotype.webp" alt="Restaurang Mannes Logotype" title="Restaurang Mannes Logotype">
+                      </div>
+                    </div>
+                </div>
                 <!-----ITEM-10----->
-                <div class="grid-item" data-toggle="collapse" data-target="#tradgard"
-                    aria-expanded="false" aria-controls="tradgard">
+                <div class="grid-item" data-toggle="modal" data-target="#tradgard">
                     <img class="img-cases img-fluid" src="assets/cases/fjallflorist-slide.webp" alt="Fjällflorist & Trädgård"
                         title="Fjällflorist & Trädgård">
                     <h3 class="cases__headline">Fjällflorist <br>& Trädgård</h3>
                 </div>
-                <div id="tradgard" class="cases__info collapse">
+                <div id="tradgard" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="tradgard" aria-hidden="true">
                     <div class="d-flex justify-content-end col-12 pb-3">
-                        <button class="close" type="button" data-toggle="collapse"
-                            data-target="#tradgard" aria-expanded="false" aria-controls="tradgard">
-                        </button>
+                        <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-12 pt-3">
@@ -548,7 +844,7 @@
                                 In this project I have designed and developed the website for the company 
                                 Fjällflorist & Trädgård. This particular page is built in Wordpress.
                             </p>
-                            <p class="py-3">
+                            <p class="pt-2 cases__info_text">
                                 I detta projekt har jag designat och utvecklat hemsidan för företaget Fjällflorist & Trädgård. 
                                 <br><br>Fjällflorist och Trädgård  formger trädgårdar och utemiljöer åt privatpersoner, bostadsrättsföreningar och företag.<br><br> 
                             </p>
@@ -558,64 +854,184 @@
                                 </button>
                             </a>
                         </div>
-                        <div class="col-md-6">
-                            <img class="img-fluid cases_img" src="assets/cases/cases-info-florist.webp" alt="Fjällflorist & Trädgård" title="Fjällflorist & Trädgård">
+                        <div class="col-md-6 justify-content-center d-flex">
+                            <a data-toggle="modal" data-target="#florist_ad">
+                                <img class="img-fluid cases_img" src="assets/cases/cases-info-florist.webp" alt="Fjällflorist & Trädgård Annons" title="Fjällflorist & Trädgård Annons">
+                            </a>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="florist_ad" tabindex="-1" role="dialog" aria-labelledby="florist_ad" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <img src="assets/cases/florist_ad.webp" alt="Fjällflorist & Trädgård Annons" title="Fjällflorist & Trädgård Annons">
+                      </div>
+                    </div>
+                </div>
                 <!-----ITEM-11----->
-                <div class="grid-item" data-toggle="collapse"
-                    data-target="#fixarn" aria-expanded="false" aria-controls="fixarn">
+                <div class="grid-item" data-toggle="modal" data-target="#fixarn">
                     <img class="img-cases img-fluid" src="assets/cases/fixarn-slide.webp"
                         alt="Fjällfixarn" title="Fjällfixarn">
                     <h3 class="cases__headline pt-2">Fjällfixarn</h3>
                 </div>
-                <div id="fixarn" class="cases__info collapse">
+                <div id="fixarn" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="fixarn" aria-hidden="true">
                     <div class="d-flex justify-content-end col-12 pb-3">
-                        <button class="close" type="button" data-toggle="collapse"
-                            data-target="#fixarn" aria-expanded="false" aria-controls="fixarn">
-                        </button>
+                        <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-12 pt-3">
                             <h3>Fjällfixarn</h3>
-                            <p class="pt-3">
+                            <p class="pt-2 cases__info_text">
                                 Tillsammans med Fjällfixaren har jag fått äran att skapa företagets logotype.
                                 <br><br> Företaget är fjälltäckande hantverksproffs som tar sej an stora som små jobb inom byggbranschen från grund till tak.
                             </p>
                         </div>
-                        <div class="col-md-6">
-                            <img class="img-fluid cases_img" src="assets/cases/cases-info-fixarn.webp" alt="Fjällfixarn">
+                        <div class="col-md-6 justify-content-center d-flex">
+                            <a data-toggle="modal" data-target="#fixarn_logotype">
+                                <img class="img-fluid cases_img" src="assets/cases/cases-info-fixarn.webp" alt="Fjällfixarn Logotype" title="Fjällfixarn Logotype">
+                            </a>
                         </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="fixarn_logotype" tabindex="-1" role="dialog" aria-labelledby="fixarn_logotype" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        <img src="assets/cases/fixarn_logotype.webp" alt="Fjällfixarn Logotype" title="Fjällfixarn Logotype">
+                      </div>
                     </div>
                 </div>
                 <!-----ITEM-12----->
-                <div class="grid-item" data-toggle="collapse"
-                    data-target="#gpea" aria-expanded="false" aria-controls="gpea">
+                <div class="grid-item" data-toggle="modal" data-target="#graphic">
                     <img class="img-cases img-fluid" src="assets/cases/gpea-slide.webp"
-                        alt="GPEA" title="GPEA">
-                    <h3 class="cases__headline pt-2">GPEA</h3>
+                        alt="Grafisk Design" title="Grafisk Design">
+                    <h3 class="cases__headline pt-2">Grafisk Design</h3>
                 </div>
-                <div id="gpea" class="cases__info collapse">
+                <div id="graphic" class="cases__info modal" tabindex="-1" role="dialog" aria-labelledby="graphic" aria-hidden="true">
                     <div class="d-flex justify-content-end col-12 pb-3">
-                        <button class="close" type="button" data-toggle="collapse"
-                            data-target="#gpea" aria-expanded="false" aria-controls="gpea">
-                        </button>
+                        <button type="button" class="btn-secondary close" data-dismiss="modal">close</button>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-12 pt-3">
-                            <h3>GPEA</h3>
-                            <p class="pt-3">                               
-                                Jag har fått förtroendet att designa företaget GPEA's logotype. <br><br>
-                                GPEA är ett företag som erbjuder tjänster inom allservice, svets och reparationer.
+                            <h3>Grafisk Design</h3>
+                            <p class="pt-2 cases__info_text">                               
+                                Här visar jag ett urval av tidigare uppdrag inom Grafisk design. <br><br>
+                                Grafiska illustrationer, fotoredigering, annonser och Layouts.
                             </p>
                         </div>
-                        <div class="col-md-6">
-                            <img class="img-fluid cases_img" src="assets/cases/cases-info-gpea.webp" alt="GPEA">
+                        <div class="col-md-6 justify-content-center d-flex">
+                            <div class="grid_templete">
+                                <div class="grid_item item_1">
+                                    <a data-toggle="modal" data-target="#print_modal">
+                                        <img class="img-fluid" src="assets/print.webp" alt="Nysäterns Fjällgård Annons" title="Print Grafisk Design">
+                                    </a>
+                                </div>
+                                <div class="grid_item item_2">
+                                    <a data-toggle="modal" data-target="#foto_modal">
+                                        <img class="img-fluid" src="assets/foto.webp" alt="Nysäterns Fjällgård Skylt" title="Foto Grafisk Design">
+                                    </a>
+                                </div>
+                                <div class="grid_item item_3">
+                                    <a data-toggle="modal" data-target="#mixed_modal">
+                                        <img class="img-fluid" src="assets/mixed.webp" alt="Blandat" title="Blandat">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!--mix ads-->
+                <div class="modal fade" id="print_modal" tabindex="-1" role="dialog" aria-labelledby="print" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div id="print_carousel" class="carousel" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                <li data-target="#print_carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#print_carousel" data-slide-to="1"></li>
+                                <li data-target="#print_carousel" data-slide-to="2"></li>
+                                <li data-target="#print_carousel" data-slide-to="3"></li>
+                                <li data-target="#print_carousel" data-slide-to="4"></li>
+                                <li data-target="#print_carousel" data-slide-to="5"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="assets/cases/grafisk/harjedalen.webp" alt="Poster Härjedalen">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="assets/cases/grafisk/paskmarknad_annons_print.webp" alt="Annons Helsida">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="assets/cases/grafisk/fjallbrollop_annons_print.webp" alt="Annons Helsida">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#print_carousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#print_carousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="foto_modal" tabindex="-1" role="dialog" aria-labelledby="foto" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div id="foto_carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#foto_carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#foto_carousel" data-slide-to="1"></li>
+                            <li data-target="#foto_carousel" data-slide-to="2"></li>
+                            <li data-target="#foto_carousel" data-slide-to="3"></li>
+                            <li data-target="#foto_carousel" data-slide-to="4"></li>
+                            <li data-target="#foto_carousel" data-slide-to="5"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/cases/grafisk/hede_ik.webp" alt="Spelarpresentation Hede IK">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#foto_carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#foto_carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="mixed_modal" tabindex="-1" role="dialog" aria-labelledby="foto" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div id="mix_carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#mix_carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#mix_carousel" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/cases/grafisk/mannes_skinn_och_ben.webp" alt="Mannes skinn och ben Logotype">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#mix_carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#mix_carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
         </section>
         <aside class="about-aside">
         </aside>
